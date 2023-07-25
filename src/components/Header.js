@@ -79,7 +79,7 @@ const Header = () => {
         <Divider
               className="divider"
               orientation='horizontal'
-              display={{md: 'none', sm: 'block', base: 'block'}}
+              display={{base: 'block', sm: 'block', md: 'block', lg: 'none', xl: 'none', '2xl': 'none'}}
               width='100%'
               height='1.5px'
               background='#FE205A'
@@ -103,11 +103,11 @@ const Header = () => {
         <Divider
           className="divider"
           orientation='horizontal'
-          display={{md: 'flex', sm: 'none', base: 'none'}}
-          width='84vw'
+          display={{base: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block', '2xl': 'block'}}
+          width='70vw'
           height='1.5px'
           background='#FE205A'
-          margin='0.625rem 8vw'
+          margin='0.625rem 15vw'
         />
         <nav className="full-screen-menu">
           <ul className="menu">

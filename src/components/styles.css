@@ -4,8 +4,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      width: 84vw;
-      margin: 10.313rem 8vw 0 8vw;
+      width: 70vw;
+      margin: 10.313rem 15vw 0 15vw;
       padding-top: 0.313rem;
     }
 
@@ -26,7 +26,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       flex-shrink: 0;
-      width: 84vw;
+      width: 70vw;
       color: #121d47;
       font-family: PT Serif;
       font-size: 1.125rem;

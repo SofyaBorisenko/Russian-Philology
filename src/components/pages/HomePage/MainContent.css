@@ -1,11 +1,8 @@
 @media (min-width: 0px) {
 
     main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      width: 70vw;
-      margin: 8.875rem 15vw 0 15vw;
+      width: 60vw;
+      margin: 8.875rem 20vw 0 20vw;
       padding-top: 0.313rem;
     }
 
@@ -15,7 +12,7 @@
       font-size: 1.125rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 1.125rem;
+      line-height: 1.687rem;
       text-transform: uppercase;
       text-align: left;
       padding: 0.625rem 0 0.625rem 0;
@@ -25,14 +22,17 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      width: 70vw;
+      width: 60vw;
       color: #121d47;
       font-family: PT Serif;
       font-size: 1.125rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.5rem;
-      text-align: left;
+      line-height: 1.687rem;
+  }
+
+  article p {
+    text-align: left;
   }
 
   .avatar {
@@ -48,7 +48,6 @@
       font-size: 1.1rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.5rem;
+      line-height: 1.65rem;
   }
-
 }

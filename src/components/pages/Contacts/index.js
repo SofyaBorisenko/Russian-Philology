@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../../layout/Header.js';
 import Footer from '../../layout/Footer.js';
-import './Research.css';
+import './Contacts.css';
 
-function Research() {
+function Contacts() {
   return (
     <div>
       <Header />
@@ -15,4 +15,4 @@ function Research() {
   );
 }
 
-export default Research;
+export default Contacts;

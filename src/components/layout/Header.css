@@ -399,8 +399,8 @@
   /* Styles for the navigation menu */
   nav {
     display: flex;
-    width: 70vw;
-    margin: 0 15vw;
+    width: 60vw;
+    margin: 0 20vw;
     padding-bottom: 0.438rem;
   }
 
@@ -413,7 +413,7 @@
     align-content: center;
     list-style-type: none;
     padding: 0;
-    width: 70vw;
+    width: 60vw;
     max-height: 1.6875rem;
   }
 

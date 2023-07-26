@@ -105,10 +105,10 @@ const Header = () => {
           className="divider"
           orientation='horizontal'
           display={{base: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block', '2xl': 'block'}}
-          width='70vw'
+          width='60vw'
           height='1.5px'
           background='#FE205A'
-          margin='0.625rem 15vw'
+          margin='0.625rem 20vw'
         />
         <nav className="full-screen-menu">
           <ul className="menu">

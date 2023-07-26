@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles.css';
-import { Avatar, AvatarBadge, AvatarGroup, Center } from '@chakra-ui/react'
+import './MainContent.css';
+import { Avatar } from '@chakra-ui/react'
 import { Wrap, WrapItem } from '@chakra-ui/react'
 
 function MainContent() {

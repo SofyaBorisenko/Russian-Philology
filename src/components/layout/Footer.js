@@ -1,7 +1,7 @@
 import React from "react";
 import './Footer.css';
 import { Divider } from "@chakra-ui/react";
-import logo3 from '../images/logo3.png';
+import logo3 from './assets/logo3.png';
 
 const Footer = () => {
   return (

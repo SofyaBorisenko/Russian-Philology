@@ -1,11 +1,11 @@
-@media (min-width: 48em) {
+@media (min-width: 0px) {
 
     main {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
       width: 70vw;
-      margin: 10.313rem 15vw 0 15vw;
+      margin: 8.875rem 15vw 0 15vw;
       padding-top: 0.313rem;
     }
 
@@ -18,14 +18,13 @@
       line-height: 1.125rem;
       text-transform: uppercase;
       text-align: left;
-      padding: 1.25rem 0 0.625rem 0;
+      padding: 0.625rem 0 0.625rem 0;
     }
 
   article {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      flex-shrink: 0;
       width: 70vw;
       color: #121d47;
       font-family: PT Serif;
@@ -34,7 +33,6 @@
       font-weight: 400;
       line-height: 1.5rem;
       text-align: left;
-      padding-top: 15px;
   }
 
   .avatar {

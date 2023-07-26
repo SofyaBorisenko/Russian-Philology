@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import './Header.css';
-import logo1 from '../images/logo1.png';
-import logo2 from '../images/logo2.png';
+import logo1 from './assets/logo1.png';
+import logo2 from './assets/logo2.png';
 import { extendTheme, Divider, Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { Link } from 'react-router-dom';
 
 const breakpoints = {
   sm: '30em', // 480px
@@ -25,7 +26,7 @@ const Header = () => {
     };
 
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
       setVisible(prevScrollPos > currentScrollPos);
       setPrevScrollPos(currentScrollPos);
     };
@@ -111,13 +112,13 @@ const Header = () => {
         />
         <nav className="full-screen-menu">
           <ul className="menu">
-            <li><a href="/">Главная</a></li>
-            <li><a href="/research">Исследования</a></li>
-            <li><a href="/staff">Сотрудники</a></li>
-            <li><a href="/teachers">Наши учителя</a></li>
-            <li><a href="/news">Новости</a></li>
-            <li><a href="/photos">Фотогалерея</a></li>
-            <li><a href="/contacts">Контакты</a></li>
+            <li><Link to="/">Главная</Link></li>
+            <li><Link to="/research">Исследования</Link></li>
+            <li><Link to="/staff">Сотрудники</Link></li>
+            <li><Link to="/teachers">Наши учителя</Link></li>
+            <li><Link to="/news">Новости</Link></li>
+            <li><Link to="/photos">Фотогалерея</Link></li>
+            <li><Link to="/contacts">Контакты</Link></li>
           </ul>
         </nav>
       </header>

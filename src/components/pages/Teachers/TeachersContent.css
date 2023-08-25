@@ -1,0 +1,15 @@
+/* Styles for 1280px+ screens */
+@media (min-width: 1280px) {
+    main {
+        width: 64vw;
+        margin: 8.875rem 18vw 0 18vw;
+    }
+
+    .accordion-text {
+        text-align: left;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+}

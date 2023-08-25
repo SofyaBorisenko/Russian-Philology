@@ -1,15 +1,13 @@
 import React from 'react';
 import Header from '../../layout/Header.js';
 import Footer from '../../layout/Footer.js';
-import './Teachers.css';
+import TeachersContent from './TeachersContent.js';
 
 function Teachers() {
   return (
     <div>
       <Header />
-        <div className='main'>
-            <p>Раздел в разработке</p>
-        </div>
+      <TeachersContent />
       <Footer />
     </div>
   );

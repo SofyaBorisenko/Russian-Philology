@@ -64,7 +64,7 @@ const Header = () => {
               )}
             </Menu>
             </div>
-            <h1 class="header-title">Русская Филология</h1>
+            <h1 class="header-title">Русская филология</h1>
             <img
             class="logo2"
             src={logo2}
@@ -88,11 +88,10 @@ const Header = () => {
         {/* Full-Screen Version */}
         <div className="full-screen-header">
             <div className="left-content">
-                <h1>Русская Филология</h1>
+                <h1>Русская филология</h1>
                 <img className="logo1"
                 src={logo1}
                 alt="Логотип ПИ РАО"
-                style={{ width: '21.25rem', height: 'auto' }}
                 />
             </div>
             <div className="right-content">
@@ -105,10 +104,10 @@ const Header = () => {
           className="divider"
           orientation='horizontal'
           display={{base: 'none', sm: 'none', md: 'none', lg: 'block', xl: 'block', '2xl': 'block'}}
-          width='60vw'
+          width='64vw'
           height='1.5px'
           background='#FE205A'
-          margin='0.625rem 20vw'
+          margin={{lg: '0.3rem 18vw', xl: '0.625rem 18vw', '2xl': '0.625rem 18vw'}}
         />
         <nav className="full-screen-menu">
           <ul className="menu">

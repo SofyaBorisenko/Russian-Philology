@@ -48,6 +48,7 @@
 @media (min-width: 480px) {
   main {
     width: 80%;
+    margin: 0 10% 0 10%;
   }
 
   main h1 {

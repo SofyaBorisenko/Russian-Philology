@@ -1,0 +1,204 @@
+/* Styles for screens under 480px */
+@media (min-width: 0px) {
+    main {
+      width: 80%;
+      margin: 0 10% 0 10%;
+    }
+
+    .accordion-button {
+        color: #43129B;
+        text-align: left;
+        font-family: PT Sans;
+        font-size: 0.85rem;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .accordion-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.05rem;
+        word-spacing: 0.08rem;
+    }
+
+    .card-heading {
+        color: #FE205A;
+        text-align: left;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2rem;
+        word-spacing: 0.1rem;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+}
+
+/* Styles for 480px-992px screens */
+@media (min-width: 480px) {
+    main {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+
+    .accordion-button {
+        color: #43129B;
+        text-align: left;
+        font-family: PT Sans;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.3rem;
+    }
+
+    .accordion-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.2rem;
+        word-spacing: 0.08rem;
+    }
+
+    .card-heading {
+        color: #FE205A;
+        text-align: left;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3rem;
+        word-spacing: 0.1rem;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+}
+
+/* Styles for 992px-1280px screens */
+@media (min-width: 992px) {
+    main {
+        width: 64vw;
+        margin-left: 18vw;
+        margin-right: 18vw;
+    }
+
+    .main-margin {
+        margin-top: 6.8rem;
+    }
+
+    .accordion-button {
+        color: #43129B;
+        text-align: left;
+        font-family: PT Sans;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+
+    .accordion-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 0.95rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3rem;
+        word-spacing: 0.15rem;
+    }
+
+    .card-heading {
+        color: #FE205A;
+        text-align: left;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4rem;
+        word-spacing: 0.2rem;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+}
+
+/* Styles for 1280px+ screens */
+@media (min-width: 1280px) {
+    main {
+        width: 64vw;
+        margin-left: 18vw;
+        margin-right: 18vw;
+    }
+
+    .main-margin {
+        margin-top: 8.875rem;
+    }
+
+    .accordion-button {
+        color: #43129B;
+        text-align: left;
+        font-family: PT Sans;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5rem;
+    }
+
+    .accordion-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.45;
+        word-spacing: 0.25rem;
+    }
+
+    .card-heading {
+        color: #FE205A;
+        text-align: left;
+    }
+
+    .card-text {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 1.15rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.6rem;
+        word-spacing: 0.3rem;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+}

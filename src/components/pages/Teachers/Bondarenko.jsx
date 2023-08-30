@@ -14,7 +14,9 @@ import {
     Stack,
     StackDivider,
     Text
-    } from '@chakra-ui/react'
+    } from '@chakra-ui/react';
+import Bondarenko_photo from '../assets/Bondarenko_photo.jpg';
+
 
 function Bondarenko() {
     return (
@@ -28,7 +30,7 @@ function Bondarenko() {
                     objectFit='contain'
                     align={'top'}
                     maxW={{ base: '100%', sm: '200px' }}
-                    src='https://upload.wikimedia.org/wikipedia/ru/7/7d/Genrietta_Granik.jpg'
+                    src={Bondarenko_photo}
                     alt='Г.Г. Граник'
                 />
                 <CardBody>

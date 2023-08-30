@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../../layout/Header.js';
-import Footer from '../../layout/Footer.js';
-import './Staff.css';
+import Header from '../../layout/Header.jsx';
+import Footer from '../../layout/Footer.jsx';
+import './Contacts.css';
 
-function Staff() {
+function Contacts() {
   return (
     <div>
       <Header />
@@ -15,4 +15,4 @@ function Staff() {
   );
 }
 
-export default Staff;
+export default Contacts;

@@ -14,7 +14,8 @@ import {
     Stack,
     StackDivider,
     Text
-    } from '@chakra-ui/react'
+    } from '@chakra-ui/react';
+    import Kontsevaya_photo from '../assets/Kontsevaya_photo.jpg';
 
 function Kontsevaya() {
     return (
@@ -28,7 +29,7 @@ function Kontsevaya() {
                     objectFit='contain'
                     align={'top'}
                     maxW={{ base: '100%', sm: '200px' }}
-                    src='https://upload.wikimedia.org/wikipedia/ru/7/7d/Genrietta_Granik.jpg'
+                    src={Kontsevaya_photo}
                     alt='Г.Г. Граник'
                 />
                 <CardBody>

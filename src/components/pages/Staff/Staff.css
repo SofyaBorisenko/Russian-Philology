@@ -1,8 +1,101 @@
-.main {
-    padding-top: 20vh;
-    min-height: 80vh;
-}
+/* Styles for 1280px+ screens */
+@media (min-width: 1280px) {
 
-p {
-    text-align: center;
+    main {
+      width: 64vw;
+      margin: 8.875rem 18vw 0 18vw;
+    }
+
+    main h1 {
+      color: #FE205A;
+      font-family: PT Sans;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.6rem;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    article h2 {
+      color: #43129B;
+      text-align: left;
+      font-family: PT Sans;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2rem;
+    }
+
+    .nav-staff {
+      color: #FE205A;
+      font-family: PT Sans;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      line-height: 3rem;
+      text-transform: uppercase;
+      text-align: left;
+      padding: 0.625rem 0;
+    }
+
+    .nav-tab {
+        color: #FE205A;
+        font-family: PT Sans;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        line-height: 3rem;
+        margin-right: 3rem;
+        padding: 0.625rem 0 0 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .staff-member {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 0.95rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3rem;
+        word-spacing: 0.15rem;
+    }
+
+    .staff-nav {
+      width: 100%;
+      margin: auto;
+    }
+
+    nav a {
+      color: #121d47;
+      font-family: PT Sans;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 3rem;
+      text-align: left;
+    }
+
+    .years {
+      background-color: #F0F6F1;
+      color: #121d47;
+      font-family: PT Sans;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.4rem;
+    }
+
+    ul {
+      list-style-position: inside;
+    }
+
+    ol {
+      list-style-position: inside;
+    }
 }

@@ -1,8 +1,51 @@
-.main {
-    padding-top: 20vh;
-    min-height: 80vh;
-}
+/* Styles for 1280px+ screens */
+@media (min-width: 1280px) {
 
-p {
-    text-align: center;
+    main {
+      width: 64vw;
+      margin: 8.875rem 18vw 0 18vw;
+    }
+
+    main h1 {
+      color: #FE205A;
+      font-family: PT Sans;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 1.6rem;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .nav-research {
+        justify-content: space-between;
+    }
+
+    .nav-tab {
+        color: #121D47;
+        font-family: PT Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.4rem;
+        padding: 0;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .nav-schoolbook {
+        justify-content: flex-start;
+    }
+
+    .research-area {
+        text-align: left;
+        color: #121d47;
+        font-family: 'PT Serif', serif;
+        font-size: 0.95rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3rem;
+        word-spacing: 0.15rem;
+    }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../layout/Header.js';
-import Footer from '../../layout/Footer.js';
+import Header from '../../layout/Header.jsx';
+import Footer from '../../layout/Footer.jsx';
 import './News.css';
 
 function News() {

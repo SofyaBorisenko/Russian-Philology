@@ -1,10 +1,10 @@
 import React, { forwardRef } from 'react';
-import '../Staff.css';
+import '../Staff.scss';
 
 const Bio = forwardRef((props, ref) => {
     return (
         <section ref={ref}>
-            <article>
+            <article className='staff-article'>
                 <h2>Биография</h2>
                 <p>Родилась 2 марта 1961 г. в Полтаве. По месту службы отца-военнослужащего 
                     училась в разных школах Подмосковья, затем в Полтавском государственном 

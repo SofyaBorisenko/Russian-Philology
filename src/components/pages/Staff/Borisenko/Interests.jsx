@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import '../Staff.css';
+import '../Staff.scss';
 
 const Interests = forwardRef((props, ref) => {
     return (

@@ -1,9 +1,11 @@
 import React from 'react';
 import Header from '../../layout/Header.jsx';
 import Footer from '../../layout/Footer.jsx';
-import './Staff.css';
+import './Staff.scss';
 import { Tabs, TabIndicator, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import Borisenko from './Borisenko/BorisenkoFull.jsx';
+import Borisenko from './Borisenko/Borisenko.jsx';
+import Mironova from './Mironova/Mironova.jsx';
+import Shishkova from './Shishkova/Shishkova.jsx';
 
 function Staff() {
   return (
@@ -31,10 +33,10 @@ function Staff() {
                 <Borisenko />
               </TabPanel>
               <TabPanel padding={0}>
-              meh
+                <Mironova />
               </TabPanel>
               <TabPanel padding={0}>
-              meh
+                <Shishkova />
               </TabPanel>
             </TabPanels>
           </Tabs>

@@ -1,3 +1,9 @@
+$pink: #FE205A;
+$violet: #43129B;
+$dark-blue: #121d47;
+$light-gray: #F0F6F1;
+
+
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
 
@@ -7,7 +13,7 @@
     }
 
     main h1 {
-      color: #FE205A;
+      color: $pink;
       font-family: PT Sans;
       font-size: 1.125rem;
       font-style: normal;
@@ -19,17 +25,17 @@
     }
 
     article h2 {
-      color: #43129B;
+      color: $violet;
       text-align: left;
       font-family: PT Sans;
       font-size: 1.2rem;
       font-style: normal;
       font-weight: 700;
-      line-height: 2rem;
+      line-height: 3rem;
     }
 
     .nav-staff {
-      color: #FE205A;
+      color: $pink;
       font-family: PT Sans;
       font-size: 1.125rem;
       font-style: normal;
@@ -42,22 +48,20 @@
     }
 
     .nav-tab {
-        color: #FE205A;
+        color: $pink;
         font-family: PT Sans;
-        font-size: 1.125rem;
         font-style: normal;
         font-weight: 700;
         letter-spacing: 0.1rem;
         line-height: 3rem;
         margin-right: 3rem;
-        padding: 0.625rem 0 0 0;
         text-align: left;
         text-transform: uppercase;
     }
 
     .staff-member {
         text-align: left;
-        color: #121d47;
+        color: $dark-blue;
         font-family: 'PT Serif', serif;
         font-size: 0.95rem;
         font-style: normal;
@@ -69,10 +73,11 @@
     .staff-nav {
       width: 100%;
       margin: auto;
+      padding-bottom: 0.75rem;
     }
 
     nav a {
-      color: #121d47;
+      color: $dark-blue;
       font-family: PT Sans;
       font-size: 1.2rem;
       font-style: normal;
@@ -81,21 +86,38 @@
       text-align: left;
     }
 
-    .years {
-      background-color: #F0F6F1;
-      color: #121d47;
-      font-family: PT Sans;
+    .staff-article p {
+      color: $dark-blue;
+      font-family: 'PT Serif', serif;
       font-size: 1.2rem;
       font-style: normal;
+      font-weight: 400;
+      line-height: 1.8rem;
+      padding-bottom: 0.625rem;
+      text-align: left;
+      word-spacing: 0.4rem;
+    }
+
+    .pub-type {
+      background-color: $light-gray;
+      color: $dark-blue;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1rem;
+      font-style: normal;
       font-weight: 700;
-      line-height: 1.4rem;
+      line-height: 1;
+      text-align: left;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      max-width: fit-content;
+
     }
 
-    ul {
-      list-style-position: inside;
+    li {
+      padding-bottom: 0.625rem;
     }
 
-    ol {
+    ul, ol {
       list-style-position: inside;
     }
 }

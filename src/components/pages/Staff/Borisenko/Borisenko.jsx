@@ -1,10 +1,11 @@
 import React from 'react';
-import '../Staff.css';
+import '../Staff.scss';
 import Bio from './Bio.jsx';
 import Interests from './Interests.jsx';
 import Publications from './Publications.jsx';
 import Awards from './Awards.jsx';
 import Navigation from './Navigation.jsx';
+import Grants from './Grants';
 
 function Borisenko() {
     return (
@@ -14,6 +15,7 @@ function Borisenko() {
             interestsRef={Interests}
             publicationsRef={Publications}
             awardsRef={Awards}
+            grantsRef={Grants}
             />
             <article>
               <p>Борисенко Наталья Анатольевна – ведущий научный сотрудник
@@ -36,6 +38,7 @@ function Borisenko() {
             <Interests ref={Interests} />
             <Publications ref={Publications} />
             <Awards ref={Awards} />
+            <Grants ref={Grants} />
           </div>
       );
     };

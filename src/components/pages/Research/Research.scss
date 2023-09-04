@@ -1,0 +1,69 @@
+$pink: #FE205A;
+$violet: #43129B;
+$dark-blue: #121d47;
+$light-gray: #F0F6F1;
+
+/* Styles for 1280px+ screens */
+@media (min-width: 1280px) {
+
+    main {
+      width: 64vw;
+      margin: 8.875rem 18vw 0 18vw;
+    }
+
+    main h1 {
+      color: #FE205A;
+      font-family: PT Sans;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 3rem;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .research-direction-tab {
+        background-color: $light-gray;
+        color: $dark-blue;
+        font-family: "PT Sans", sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+        text-align: left;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        max-width: fit-content;
+    }
+
+    .research-direction-panel {
+      padding: 1rem 0 0 0;
+    }
+
+    .school-tab {
+      appearance: none;
+      align-items: center;
+      justify-content: center;
+      background: $light-gray;
+      color: $dark-blue;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      border-radius: 0.375rem;
+      line-height: 1.2;
+      font-size: 1rem;
+      font-weight: 700;
+      min-width: 2.5rem;
+      height: 2.5rem;
+      user-select: none;
+      position: relative;
+      white-space: nowrap;
+      vertical-align: middle;
+      font-family: "PT Sans";
+      font-style: normal;
+    }
+
+    .school-panel {
+      padding: 1rem 0 0 0;
+    }
+}

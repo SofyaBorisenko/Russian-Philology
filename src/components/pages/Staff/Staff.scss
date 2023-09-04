@@ -47,12 +47,11 @@ $light-gray: #F0F6F1;
       padding: 0.625rem 0;
     }
 
-    .nav-tab {
+    .staff-name-tab {
         color: $pink;
         font-family: PT Sans;
         font-style: normal;
         font-weight: 700;
-        letter-spacing: 0.1rem;
         line-height: 3rem;
         margin-right: 3rem;
         text-align: left;
@@ -79,10 +78,9 @@ $light-gray: #F0F6F1;
     nav a {
       color: $dark-blue;
       font-family: PT Sans;
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-style: normal;
-      font-weight: 400;
-      line-height: 3rem;
+      font-weight: 700;
       text-align: left;
     }
 

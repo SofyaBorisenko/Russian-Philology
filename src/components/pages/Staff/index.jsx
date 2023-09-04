@@ -18,9 +18,9 @@ function Staff() {
       variant="unstyled"
       >
             <TabList>
-              <Tab className="nav-tab" padding={0}>Борисенко Н.А.</Tab>
-              <Tab className="nav-tab" padding={0}>Миронова К.В.</Tab>
-              <Tab className="nav-tab" padding={0}>Шишкова С.В.</Tab>
+              <Tab className="staff-name-tab" padding={0}>Борисенко Н.А.</Tab>
+              <Tab className="staff-name-tab" padding={0}>Миронова К.В.</Tab>
+              <Tab className="staff-name-tab" padding={0}>Шишкова С.В.</Tab>
             </TabList>
             <TabIndicator
               mt="-1.5px"

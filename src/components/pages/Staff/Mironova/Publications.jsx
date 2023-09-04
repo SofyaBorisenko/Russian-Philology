@@ -8,14 +8,14 @@ const Publications = forwardRef((props, ref) => {
             <h2>Публикации</h2>
             <Tabs
             isFitted
-            size={'lg'}
+            size={'md'}
             position="relative"
             variant="enclosed"
             >
                 <TabList gap={1}>
                     <Tab className='pub-type' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Научные статьи в рецензируемых изданиях</Tab>
-                    <Tab className='pub-type' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Учебные книги <br />и пособия</Tab>
-                    <Tab className='pub-type' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Подразделы в коллективных монографиях</Tab>
+                    <Tab className='pub-type' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Учебные <br />книги и пособия</Tab>
+                    <Tab className='pub-type' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Подразделы в <br />коллективных монографиях</Tab>
                     <Tab className='pub-type' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Словарные <br />статьи</Tab>
                     <Tab className='pub-type' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Основные статьи в научных сборниках 2018-2023 гг.</Tab>
                 </TabList>

@@ -25,19 +25,21 @@ function Kontsevaya() {
                 overflow='hidden'
                 variant='outline'
             >
-                <Image
-                    objectFit='contain'
-                    align={'top'}
-                    maxW={{ base: '100%', sm: '200px' }}
-                    src={Kontsevaya_photo}
-                    alt='Г.Г. Граник'
-                />
                 <CardBody>
                     <Stack divider={<StackDivider />} spacing='4'>
                     <Heading className='card-heading' size='md'>
                         Л.А. Концевая
                     </Heading>
                     <Box>
+                        <Image
+                            align={'top'}
+                            float={'left'}
+                            marginRight={5}
+                            maxW={{ base: '100%', sm: '200px' }}
+                            objectFit='contain'
+                            src={Kontsevaya_photo}
+                            alt='Л.А. Концевая'
+                        />
                         <Text className='card-text'>
                         <b>Концевая Лилия Абрамовна</b> (1931–2021) – российский психолог, 
                         специалист в области педагогической психологии, кандидат 

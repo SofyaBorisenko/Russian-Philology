@@ -17,10 +17,10 @@ function PaperTextbook() {
                     <Tab className='school-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Основная школа</Tab>
                 </TabList>
                 <TabPanels>
-                    <TabPanel className='school-panel'>
+                    <TabPanel style={{ padding: '1rem 0 0 0' }}>
                         <PrimarySchool />
                     </TabPanel>
-                    <TabPanel className='school-panel'>
+                    <TabPanel style={{ padding: '1rem 0 0 0' }}>
                         <SecondarySchool />
                     </TabPanel>
                 </TabPanels>

@@ -26,19 +26,21 @@ function Bondarenko() {
                 overflow='hidden'
                 variant='outline'
             >
-                <Image
-                    objectFit='contain'
-                    align={'top'}
-                    maxW={{ base: '100%', sm: '200px' }}
-                    src={Bondarenko_photo}
-                    alt='Г.Г. Граник'
-                />
                 <CardBody>
                     <Stack divider={<StackDivider />} spacing='4'>
                     <Heading className='card-heading' size='md'>
                         С.М. Бондаренко
                     </Heading>
                     <Box>
+                        <Image
+                            align={'top'}
+                            float={'left'}
+                            marginRight={5}
+                            maxW={{ base: '100%', sm: '200px' }}
+                            objectFit='contain'
+                            src={Bondarenko_photo}
+                            alt='С.М. Бондаренко'
+                        />
                         <Text className='card-text'>
                         <b>Бондаренко Стелла Морисовна</b> (1931–2008) – российский психолог, 
                         специалист в области педагогической психологии. Канд. психол. наук 

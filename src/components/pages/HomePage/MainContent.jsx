@@ -1,6 +1,6 @@
 import React from 'react';
-import './MainContent.css';
-import { Avatar, extendTheme, Image, Wrap, WrapItem } from '@chakra-ui/react';
+import './MainContent.scss';
+import { Avatar, extendTheme, Wrap, WrapItem } from '@chakra-ui/react';
 
 const breakpoints = {
   sm: '30em', // 480px

@@ -92,11 +92,11 @@ $light-gray: #F0F6F1;
       font-weight: 400;
       line-height: 1.8rem;
       padding-bottom: 0.625rem;
-      text-align: left;
+      text-align: justify;
       word-spacing: 0.4rem;
     }
 
-    .pub-type {
+    .pub-type-tab {
       background-color: $light-gray;
       color: $dark-blue;
       font-family: "PT Sans", sans-serif;
@@ -113,6 +113,7 @@ $light-gray: #F0F6F1;
 
     li {
       padding-bottom: 0.625rem;
+      text-align: justify;
     }
 
     ul, ol {

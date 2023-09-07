@@ -9,7 +9,7 @@ function PaperTextbook() {
         <div>
             <Tabs
             isLazy
-            size={'md'}
+            size={{base: 'sm', sm: 'sm', md: 'sm', lg: 'md', xl: 'md', '2xl': 'lg'}}
             position="relative"
             variant="unstyled">
                 <TabList gap={1}>

@@ -43,7 +43,7 @@
   }
 }
 
-/* Styles for 480px-992px screens */
+/* Styles for 480px-768px screens */
 @media (min-width: 480px) {
   main {
     width: 80%;
@@ -88,6 +88,14 @@
   }
 }
 
+/* Styles for 768px-992px screens */
+@media (min-width: 768px) {
+  main {
+    width: 80vw;
+    margin: 6.25rem 10vw 0 10vw;
+  }
+}
+
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {
   main {
@@ -101,7 +109,8 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 0.35rem;
     text-transform: uppercase;
     text-align: left;
   }
@@ -142,7 +151,7 @@
       margin: 8.875rem 18vw 0 18vw;
     }
 
-    main h1 {
+    .home-article h1 {
       color: #FE205A;
       font-family: PT Sans;
       font-size: 1.125rem;
@@ -153,7 +162,7 @@
       text-align: left;
     }
 
-  article {
+  .home-article {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;

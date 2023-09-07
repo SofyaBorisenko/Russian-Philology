@@ -85,7 +85,7 @@
     }
   }
 
-/* Styles for 480px-992px screens */
+/* Styles for 480px-768px screens */
 @media (min-width: 480px) {
     .mobile-header {
       display: flex;
@@ -172,6 +172,138 @@
       line-height: 0.85rem;
     }
   }
+
+/* Styles for 768px-992px screens */
+@media (min-width: 768px) {
+    /* Hide the mobile menu on larger screens */
+    .mobile-header,
+    .mobile-menu {
+      display: none;
+    }
+
+    /* Show the full-screen menu on larger screens */
+    .full-screen-menu {
+      display: block;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      transition: transform 0.3s ease-in-out;
+      background-color: #F0F6F1;
+      transform: translateY(0);
+    }
+
+    .header.hidden {
+      transform: translateY(-10rem);
+    }
+
+    .full-screen-header {
+      display: flex;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 0 10vw;
+      padding-top: 0.313rem;
+    }
+
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .left-content h1 {
+      margin-bottom: 0;
+      color: #FE205A;
+      font-family: PT Sans;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.4rem;
+      text-align: left;
+      padding-bottom: 0.5rem;
+    }
+
+    .logo1 {
+      display: block;
+      width: 13rem;
+      height: auto;
+    }
+
+    .right-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .right-content h2 {
+      padding-top: 0.3rem;
+      color: #43129B;
+      text-align: right;
+      font-family: PT Sans;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1rem;
+    }
+
+    .right-content h3 {
+      padding-top: 0.35rem;
+      color: #121D47;
+      text-align: right;
+      font-family: PT Sans;
+      font-size: 0.9rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 0.9rem;
+    }
+
+    /* Styles for the navigation menu */
+    nav {
+      display: flex;
+      width: 80vw;
+      margin: 0 10vw;
+      padding-bottom: 0.438rem;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      justify-content: space-between;
+      align-content: center;
+      list-style-type: none;
+      padding: 0;
+      width: 80vw;
+      max-height: 1.6875rem;
+    }
+
+    .menu li {
+      margin-right: 0.625rem;
+    }
+
+    .menu li:last-child {
+      margin-right: 0;
+    }
+
+    .menu a {
+      color: #121D47;
+      font-family: PT Sans;
+      font-size: 0.8rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    .menu a:hover {
+      background-color: #C4EAA5;
+    }
+}
 
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {

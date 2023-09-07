@@ -16,8 +16,7 @@ const Footer = () => {
             <div className="mob-footer-right">
               <p>125009, г. Москва,<br />
               ул. Моховая, д. 9, стр. 4</p>
-              <p>+7 (495) 695-88-76<br />
-              +7 (495) 695-81-28</p>
+              <p>+7 (909) 692-11-14</p>
               <p>director@pirao.ru</p>
             </div>
           </div>
@@ -33,14 +32,13 @@ const Footer = () => {
               <div className="footer-grid">
                 <div className="footer-grid-columns">
                   <p>125009, г. Москва,</p>
-                  <p>ул. Моховая, д. 9, стр. 4</p>
+                  <p>ул. Моховая, д. 9, стр. 4, к. 018</p>
                 </div>
                 <div className="footer-grid-columns">
-                  <p>+7 (495) 695-88-76</p>
-                  <p>+7 (495) 695-81-28</p>
+                  <p>+7 (909) 692-11-14</p>
                 </div>
                 <div className="footer-grid-columns">
-                  <p>director@pirao.ru</p>
+                  <p>borisenko_natalya@list.ru</p>
                 </div>
               </div>
             </div>

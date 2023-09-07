@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../../layout/Header.jsx';
-import MainContent from './MainContent.jsx';
+import Home from './Home.jsx';
 import Footer from '../../layout/Footer.jsx';
 
 function HomePage() {
   return (
     <div>
       <Header />
-      <MainContent />
+      <Home />
       <Footer />
     </div>
   );

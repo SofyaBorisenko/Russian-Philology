@@ -103,13 +103,8 @@ $dark-blue: #121d47;
 @media (min-width: 992px) {
     main {
         width: 64vw;
-        margin-left: 18vw;
-        margin-right: 18vw;
-    }
-
-    .main-margin {
-        margin-top: 6.8rem;
-    }
+        margin: 6.8rem 18vw 0 18vw;
+      }
 
     .accordion-button {
         color: $violet;
@@ -157,13 +152,8 @@ $dark-blue: #121d47;
 @media (min-width: 1280px) {
     main {
         width: 64vw;
-        margin-left: 18vw;
-        margin-right: 18vw;
-    }
-
-    .main-margin {
-        margin-top: 8.875rem;
-    }
+        margin: 8.875rem 18vw 0 18vw;
+      }
 
     .accordion-button {
         color: $violet;

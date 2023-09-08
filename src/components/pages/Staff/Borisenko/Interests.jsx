@@ -3,7 +3,7 @@ import '../Staff.scss';
 
 const Interests = forwardRef((props, ref) => {
     return (
-        <article ref={ref}>
+        <article ref={ref} className='staff-article'>
             <h2>Научные интересы</h2>
             <ul>
                 <li>теория и практика создания учебников нового типа по русскому языку;</li>
@@ -14,7 +14,6 @@ const Interests = forwardRef((props, ref) => {
                 <li>чтение и грамотность, в том числе новая грамотность, воспитание читателя-школьника, приобщение подростков к чтению;</li>
                 <li>русский язык, культура русской речи, изменения в современном русском языке.</li>
             </ul>
-            <br />
         </article>
     );
 });

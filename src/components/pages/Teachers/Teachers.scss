@@ -2,55 +2,58 @@ $pink: #FE205A;
 $violet: #43129B;
 $dark-blue: #121d47;
 
+/* Common styles for elements */
+.accordion-text, .card-text {
+    color: $dark-blue;
+    text-align: justify;
+    font-family: "PT Serif", serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.accordion-button, .card-heading {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+li {
+    text-align: left;
+}
+
+ol {
+    list-style-position: inside;
+}
+
 /* Styles for screens under 480px */
 @media (min-width: 0px) {
     main {
-      width: 80%;
-      margin: 0 10% 0 10%;
+        width: 80%;
+        margin: 0 10% 0 10%;
     }
 
     .accordion-button {
         color: $violet;
-        text-align: left;
-        font-family: PT Sans;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         font-style: normal;
-        font-weight: 700;
     }
 
     .accordion-text {
-        text-align: left;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
-        font-size: 0.75rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.05rem;
-        word-spacing: 0.08rem;
+        font-size: 0.65rem;
+        line-height: 0.9rem;
     }
 
     .card-heading {
         color: $pink;
-        text-align: left;
     }
 
     .card-text {
-        text-align: left;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
-        font-size: 0.8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.2rem;
-        word-spacing: 0.1rem;
-    }
-
-    ol {
-        list-style-position: inside;
+        font-size: 0.7rem;
+        line-height: 1rem;
     }
 }
 
-/* Styles for 480px-992px screens */
+/* Styles for 480px-768px screens */
 @media (min-width: 480px) {
     main {
         width: 80%;
@@ -59,43 +62,54 @@ $dark-blue: #121d47;
 
     .accordion-button {
         color: $violet;
-        text-align: left;
-        font-family: PT Sans;
         font-size: 0.9rem;
         font-style: normal;
-        font-weight: 700;
         line-height: 1.3rem;
     }
 
     .accordion-text {
-        text-align: left;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
-        font-size: 0.8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.2rem;
-        word-spacing: 0.08rem;
+        font-size: 0.7rem;
+        line-height: 1rem;
     }
 
     .card-heading {
         color: $pink;
-        text-align: left;
     }
 
     .card-text {
-        text-align: left;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
-        font-size: 0.9rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.3rem;
-        word-spacing: 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+}
+
+/* Styles for 768px-992px screens */
+@media (min-width: 768px) {
+    main {
+        width: 80vw;
+        margin: 6.25rem 10vw 0 10vw;
     }
 
-    ol {
-        list-style-position: inside;
+    .accordion-button {
+        color: $violet;
+        font-size: 1rem;
+        font-style: normal;
+        line-height: 1.25rem;
+    }
+
+    .accordion-text {
+        font-size: 0.85rem;
+        line-height: 1.15rem;
+        word-spacing: 0.25rem;
+    }
+
+    .card-heading {
+        color: $pink;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        word-spacing: 0.3rem;
     }
 }
 
@@ -108,43 +122,25 @@ $dark-blue: #121d47;
 
     .accordion-button {
         color: $violet;
-        text-align: left;
-        font-family: PT Sans;
         font-size: 1.1rem;
         font-style: normal;
-        font-weight: 700;
         line-height: 1.5rem;
     }
 
     .accordion-text {
-        text-align: left;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
         font-size: 0.95rem;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.3rem;
         word-spacing: 0.15rem;
     }
 
     .card-heading {
         color: $pink;
-        text-align: left;
     }
 
     .card-text {
-        text-align: left;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
         font-size: 1rem;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.4rem;
         word-spacing: 0.2rem;
-    }
-
-    ol {
-        list-style-position: inside;
     }
 }
 
@@ -157,42 +153,24 @@ $dark-blue: #121d47;
 
     .accordion-button {
         color: $violet;
-        text-align: left;
-        font-family: PT Sans;
         font-size: 1.2rem;
         font-style: normal;
-        font-weight: 700;
         line-height: 1.5rem;
     }
 
     .accordion-text {
-        text-align: justify;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
         font-size: 1.1rem;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.45;
         word-spacing: 0.4rem;
     }
 
     .card-heading {
         color: $pink;
-        text-align: left;
     }
 
     .card-text {
-        text-align: justify;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
         font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.8rem;
         word-spacing: 0.4rem;
-    }
-
-    ol {
-        list-style-position: inside;
     }
 }

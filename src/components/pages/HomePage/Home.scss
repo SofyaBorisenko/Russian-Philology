@@ -94,6 +94,45 @@
     width: 80vw;
     margin: 6.25rem 10vw 0 10vw;
   }
+  main h1 {
+    color: #FE205A;
+    font-family: PT Sans;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  article {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      color: #121d47;
+      font-family: PT Serif;
+      font-size: 0.9rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.3rem;
+      padding-bottom: 0.5rem;
+      word-spacing: 0.3rem;
+  }
+
+  article p {
+    padding-bottom: 0.5rem;
+    text-align: justify;
+  }
+
+  h2 {
+      color: #43129B;
+      text-align: center;
+      font-family: PT Serif;
+      font-size: 0.9rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.2rem;
+  }
 }
 
 /* Styles for 992px-1280px screens */
@@ -129,7 +168,7 @@
   }
 
   article p {
-    text-align: left;
+    text-align: justify;
   }
 
   h2 {

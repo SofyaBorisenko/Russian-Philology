@@ -32,7 +32,7 @@ function PrimarySchool() {
     };
 
     return (
-        <div id="primary-school">
+        <div id="paper-textbook">
             <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
@@ -46,7 +46,10 @@ function PrimarySchool() {
                                 под ред. акад. РАО Г.Г. Граник, В.В. Рубцова
                             </Heading>
                             {/* A button to trigger the smooth scroll */}
-                            <Button onClick={scrollToTextbooks} className='scroll-button' _hover={{ bg: '#C4EAA5' }}>
+                            <Button
+                            onClick={scrollToTextbooks}
+                            className='scroll-button'
+                            _hover={{ bg: '#C4EAA5' }}>
                                 Перейти к учебникам
                             </Button>
                         </div>

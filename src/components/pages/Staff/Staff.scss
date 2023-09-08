@@ -3,6 +3,52 @@ $violet: #43129B;
 $dark-blue: #121d47;
 $light-gray: #F0F6F1;
 
+/* Common styles for elements */
+
+/* Text-colors */
+.staff-name-tab {
+  color: $pink;
+}
+
+.staff-article h2 {
+  color: $violet;
+}
+
+nav a, .staff-member, .staff-article p, .pub-type-tab {
+  color: $dark-blue;
+}
+
+/* Fonts */
+.staff-article h2, .staff-name-tab, nav a, .pub-type-tab {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+
+.staff-member, .staff-article p {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Other styles */
+.staff-name-tab {
+  text-transform: uppercase;
+}
+
+.staff-article p, li {
+  text-align: justify;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+.pub-type-tab {
+  background-color: $light-gray;
+  max-width: fit-content;
+}
 
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
@@ -12,61 +58,9 @@ $light-gray: #F0F6F1;
       margin: 8.875rem 18vw 0 18vw;
     }
 
-    main h1 {
-      color: $pink;
-      font-family: PT Sans;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 700;
-      letter-spacing: 0;
-      line-height: 1.6rem;
-      text-transform: uppercase;
-      text-align: left;
-    }
-
-    article h2 {
-      color: $violet;
-      text-align: left;
-      font-family: PT Sans;
-      font-size: 1.2rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 3rem;
-    }
-
-    .nav-staff {
-      color: $pink;
-      font-family: PT Sans;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      line-height: 3rem;
-      text-transform: uppercase;
-      text-align: left;
-      padding: 0.625rem 0;
-    }
-
     .staff-name-tab {
-        color: $pink;
-        font-family: PT Sans;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 3rem;
-        margin-right: 3rem;
-        text-align: left;
-        text-transform: uppercase;
-    }
-
-    .staff-member {
-        text-align: left;
-        color: $dark-blue;
-        font-family: 'PT Serif', serif;
-        font-size: 0.95rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.3rem;
-        word-spacing: 0.15rem;
+      line-height: 3rem;
+      margin-right: 3rem;
     }
 
     .staff-nav {
@@ -75,48 +69,34 @@ $light-gray: #F0F6F1;
       padding-bottom: 0.75rem;
     }
 
-    nav a {
-      color: $dark-blue;
-      font-family: PT Sans;
+    .staff-nav a {
       font-size: 1rem;
-      font-style: normal;
-      font-weight: 700;
-      text-align: left;
     }
 
-    .staff-article p {
-      color: $dark-blue;
-      font-family: 'PT Serif', serif;
+    .staff-article h2 {
       font-size: 1.2rem;
-      font-style: normal;
-      font-weight: 400;
+      line-height: 3rem;
+    }
+
+    .staff-article p, li {
+      font-size: 1.2rem;
       line-height: 1.8rem;
       padding-bottom: 0.625rem;
-      text-align: justify;
       word-spacing: 0.4rem;
     }
 
     .pub-type-tab {
-      background-color: $light-gray;
-      color: $dark-blue;
-      font-family: "PT Sans", sans-serif;
       font-size: 1rem;
-      font-style: normal;
-      font-weight: 700;
       line-height: 1;
-      text-align: left;
       align-content: flex-start;
       flex-wrap: wrap;
-      max-width: fit-content;
+    }
 
+    ol {
+      padding-top: 0.625rem;
     }
 
     li {
       padding-bottom: 0.625rem;
-      text-align: justify;
-    }
-
-    ul, ol {
-      list-style-position: inside;
     }
 }

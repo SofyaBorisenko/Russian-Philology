@@ -4,11 +4,11 @@ import '../Staff.scss';
 
 const Publications = forwardRef((props, ref) => {
   return (
-        <article ref={ref}>
+        <article ref={ref} className='staff-article'>
             <h2>Публикации</h2>
             <Tabs
             isFitted
-            size={'md'}
+            size={{ base: 'sm', md: 'md', lg: 'lg' }}
             position="relative"
             variant="enclosed"
             >
@@ -117,20 +117,6 @@ const Publications = forwardRef((props, ref) => {
                         <li>Беседа о стихотворениях М.Ю. Лермонтова «Утес» и «На севере диком стоит одиноко…» // Русский язык. 2010. № 17. С. 34-37. </li>
                         <li>Мотив родины в поэзии В.В. Набокова и М.Ю. Лермонтова как семантический вектор их внутреннего пути: материалы Междунар. молодежного науч. форума «Ломоносов-2007» (секция «Филология») [Электр. ресурс]. М.: МГУ, 2007. </li>
                         <li>Читаем поэзию М.Ю. Лермонтова // Психолого-дидактические основы создания учебников нового типа по русской филологии / под науч. ред. Г.Г. Граник. Москва-Обнинск, 2007. С. 164-199.</li>
-                        </ol>
-                        <br />
-                    </TabPanel>
-                    <TabPanel padding={0}>
-                        <br />
-                        <ol>
-                            <li>lala.</li>
-                        </ol>
-                        <br />
-                    </TabPanel>
-                    <TabPanel padding={0}>
-                        <br />
-                        <ol>
-                            <li>lala.</li>
                         </ol>
                         <br />
                     </TabPanel>

@@ -13,14 +13,28 @@ function PaperTextbook() {
             position="relative"
             variant="unstyled">
                 <TabList gap={1}>
-                    <Tab className='school-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Начальная школа</Tab>
-                    <Tab className='school-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Основная школа</Tab>
+                    <Tab
+                    paddingLeft={{md: '0.5rem'}}
+                    paddingRight={{md: '0.5rem'}}
+                    className='school-tab'
+                    _selected={{ color: '#121d47', bg: '#C4EAA5' }}
+                    >
+                        Начальная школа
+                    </Tab>
+                    <Tab
+                    paddingLeft={{md: '0.5rem'}}
+                    paddingRight={{md: '0.5rem'}}
+                    className='school-tab'
+                    _selected={{ color: '#121d47', bg: '#C4EAA5' }}
+                    >
+                        Основная школа
+                    </Tab>
                 </TabList>
                 <TabPanels>
-                    <TabPanel style={{ padding: '1rem 0 0 0' }}>
+                    <TabPanel style={{ padding: '0.5rem 0 0 0' }}>
                         <PrimarySchool />
                     </TabPanel>
-                    <TabPanel style={{ padding: '1rem 0 0 0' }}>
+                    <TabPanel style={{ padding: '0.5rem 0 0 0' }}>
                         <SecondarySchool />
                     </TabPanel>
                 </TabPanels>

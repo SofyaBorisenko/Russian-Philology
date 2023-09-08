@@ -22,16 +22,16 @@ function Research() {
               <Tab className="research-dir-tab" _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Школьное <br />литературоведение</Tab>
             </TabList>
             <TabPanels>
-              <TabPanel style={{ padding: '1rem 0 0 0' }}>
+              <TabPanel style={{ padding: '0.5rem 0 0 0' }}>
                 <PaperTextbook />
               </TabPanel>
-              <TabPanel style={{ padding: '1rem 0 0 0' }}>
+              <TabPanel style={{ padding: '0.5rem 0 0 0' }}>
               meh
               </TabPanel>
-              <TabPanel style={{ padding: '1rem 0 0 0' }}>
+              <TabPanel style={{ padding: '0.5rem 0 0 0' }}>
               meh
               </TabPanel>
-              <TabPanel style={{ padding: '1rem 0 0 0' }}>
+              <TabPanel style={{ padding: '0.5rem 0 0 0' }}>
               meh
               </TabPanel>
             </TabPanels>

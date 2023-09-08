@@ -27,15 +27,18 @@ function Kontsevaya() {
             >
                 <CardBody>
                     <Stack divider={<StackDivider />} spacing='4'>
-                    <Heading className='card-heading' size='md'>
+                    <Heading
+                    className='card-heading'
+                    size={{ base: 'sm', md: 'sm', lg: 'md', '2xl': 'lg' }}
+                    >
                         Л.А. Концевая
                     </Heading>
                     <Box>
                         <Image
                             align={'top'}
                             float={'left'}
-                            marginRight={5}
-                            maxW={{ base: '100%', sm: '200px' }}
+                            marginRight={{ base: 3, md: 5, '2xl': 6 }}
+                            maxW={{ base: '110px', sm: '140px', md: '180px', lg: '200px', '2xl': '210px' }}
                             objectFit='contain'
                             src={Kontsevaya_photo}
                             alt='Л.А. Концевая'

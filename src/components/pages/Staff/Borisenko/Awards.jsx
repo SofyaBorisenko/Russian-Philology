@@ -3,7 +3,7 @@ import '../Staff.scss';
 
 const Awards = forwardRef((props, ref) => {
     return (
-        <article ref={ref}>
+        <article ref={ref} className='staff-article'>
             <h2>Награды и благодарности</h2>
             <ul>
                 <li>Премия Правительства Российской Федерации в области 
@@ -14,7 +14,6 @@ const Awards = forwardRef((props, ref) => {
                     высококвалифицированную деятельность в области 
                     психологии и в связи со 100-летием ФГНУ ПИ РАО (2012).</li>
             </ul>
-            <br />
         </article>
         );
 });

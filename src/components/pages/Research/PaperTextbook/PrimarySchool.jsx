@@ -49,6 +49,7 @@ function PrimarySchool() {
                             <Button
                             onClick={scrollToTextbooks}
                             className='scroll-button'
+                            fontSize={{ base: '0.75rem', sm: '0.8rem', md: '0.9rem', lg: '1rem', xl: '1.1rem' }}
                             _hover={{ bg: '#C4EAA5' }}>
                                 Перейти к учебникам
                             </Button>
@@ -131,8 +132,8 @@ function PrimarySchool() {
                                         <Image
                                             align={'top'}
                                             float={'left'}
-                                            marginRight={5}
-                                            maxW={{ base: '100%', sm: '200px' }}
+                                            marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
+                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
                                             objectFit='contain'
                                             src={grade1}
                                             alt='Учебник 1-го класса'
@@ -165,8 +166,8 @@ function PrimarySchool() {
                                     <Image
                                             align={'top'}
                                             float={'left'}
-                                            marginRight={5}
-                                            maxW={{ base: '100%', sm: '250px' }}
+                                            marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
+                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
                                             objectFit='contain'
                                             src={grade2}
                                             alt='Учебник 2-го класса'
@@ -199,8 +200,8 @@ function PrimarySchool() {
                                         <Image
                                             align={'top'}
                                             float={'left'}
-                                            marginRight={5}
-                                            maxW={{ base: '100%', sm: '300px' }}
+                                            marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
+                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
                                             objectFit='contain'
                                             src={grade3}
                                             alt='Учебник 3-го класса'
@@ -233,8 +234,8 @@ function PrimarySchool() {
                                         <Image
                                             align={'top'}
                                             float={'left'}
-                                            marginRight={5}
-                                            maxW={{ base: '100%', sm: '250px' }}
+                                            marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
+                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
                                             objectFit='contain'
                                             src={grade4}
                                             alt='Учебник 4-го класса'

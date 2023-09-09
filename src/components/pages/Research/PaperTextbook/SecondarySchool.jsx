@@ -44,6 +44,7 @@ function SecondarySchool() {
                             <Button
                             onClick={scrollToTextbooks}
                             className='scroll-button'
+                            fontSize={{ base: '0.75rem', sm: '0.8rem', md: '0.9rem', lg: '1rem', xl: '1.1rem' }}
                             _hover={{ bg: '#C4EAA5' }}>
                                 Перейти к учебникам
                             </Button>

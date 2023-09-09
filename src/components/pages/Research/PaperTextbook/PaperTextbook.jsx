@@ -9,22 +9,19 @@ function PaperTextbook() {
         <div>
             <Tabs
             isLazy
-            size={{base: 'sm', sm: 'sm', md: 'sm', lg: 'md', xl: 'md', '2xl': 'lg'}}
             position="relative"
             variant="unstyled">
                 <TabList gap={1}>
                     <Tab
-                    paddingLeft={{md: '0.5rem'}}
-                    paddingRight={{md: '0.5rem'}}
                     className='school-tab'
+                    fontSize={{ base: '0.75rem', sm: '0.8rem', md: '0.9rem', lg: '1rem', xl: '1.1rem' }}
                     _selected={{ color: '#121d47', bg: '#C4EAA5' }}
                     >
                         Начальная школа
                     </Tab>
                     <Tab
-                    paddingLeft={{md: '0.5rem'}}
-                    paddingRight={{md: '0.5rem'}}
                     className='school-tab'
+                    fontSize={{ base: '0.75rem', sm: '0.8rem', md: '0.9rem', lg: '1rem', xl: '1.1rem' }}
                     _selected={{ color: '#121d47', bg: '#C4EAA5' }}
                     >
                         Основная школа

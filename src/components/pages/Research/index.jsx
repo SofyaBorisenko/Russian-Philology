@@ -10,16 +10,16 @@ function Research() {
     <div>
       <Header />
         <main>
-          <Heading className="research-heading">НАПРАВЛЕНИЯ ИССЛЕДОВАНИЙ</Heading>
+          <Heading className="research-heading">Направления исследований</Heading>
           <Tabs isFitted
             position="relative"
             variant="enclosed"
-            size={{base: 'sm', sm: 'sm', md: 'sm', lg: 'md', xl: 'md', '2xl': 'lg'}}>
+          >
             <TabList gap={1}>
-              <Tab className="research-dir-tab" _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Школьный учебник <br />на бумажном носителе</Tab>
+              <Tab className="research-dir-tab" _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Школьный учебник на<br /> бумажном носителе</Tab>
               <Tab className="research-dir-tab" _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Цифровой <br />школьный учебник</Tab>
               <Tab className="research-dir-tab" _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Чтение и <br />понимание текста</Tab>
-              <Tab className="research-dir-tab" _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Школьное <br />литературоведение</Tab>
+              <Tab className="research-dir-tab" _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Школьное литературо-<br />ведение</Tab>
             </TabList>
             <TabPanels>
               <TabPanel style={{ padding: '0.5rem 0 0 0' }}>

@@ -8,16 +8,39 @@ const Publications = forwardRef((props, ref) => {
             <h2>Публикации</h2>
             <Tabs
             isFitted
-            size={{ base: 'sm', md: 'md', lg: 'lg' }}
             position="relative"
             variant="enclosed"
+            width={'100%'}
             >
-                <TabList gap={1}>
-                    <Tab className='pub-type-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Научные статьи в <br />рецензируемых изданиях</Tab>
-                    <Tab className='pub-type-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Статьи в научных <br />сборниках и монографиях</Tab>
-                    <Tab className='pub-type-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Учебные <br />книги и пособия</Tab>
-                    <Tab className='pub-type-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Редактирование монографий <br />и сборников конференций</Tab>
-                    <Tab className='pub-type-tab' _selected={{ color: '#121d47', bg: '#C4EAA5' }}>Словарные <br />статьи</Tab>
+                <TabList gap={1} style={{ flexWrap: 'wrap' }}>
+                {[
+                    'Научные статьи в рецензируемых изданиях',
+                    'Статьи в научных сборниках и монографиях',
+                    'Учебные книги и пособия',
+                    'Редактирование монографий и сборников конференций',
+                    'Словарные статьи',
+                ].map((text) => (
+                    <Tab
+                    key={text}
+                    backgroundColor={'#F0F6F1'}
+                    _selected={{ backgroundColor: '#C4EAA5' }}
+                    fontSize={{ base: '0.75rem', sm: '0.8rem', md: '0.9rem', lg: '1rem', xl: '1.1rem' }}
+                    padding={{ base: '2', md: '3', xl: '4' }}
+                    style={{
+                        alignContent: 'flex-start',
+                        flexWrap: 'wrap',
+                        lineHeight: '1',
+                        color: '#121d47',
+                        fontFamily: '"PT Sans", sans-serif',
+                        fontStyle: 'normal',
+                        fontWeight: 700,
+                        textAlign: 'left',
+                        maxWidth: 'fit-content',
+                    }}
+                    >
+                    {text}
+                    </Tab>
+                ))}
                 </TabList>
                 <TabPanels>
                     <TabPanel padding={0}>

@@ -1,45 +1,41 @@
 import React from 'react';
+import { Tabs, TabList, Tab, TabIndicator, TabPanels, TabPanel } from '@chakra-ui/react';
 import Header from '../../layout/Header.jsx';
 import Footer from '../../layout/Footer.jsx';
 import './Staff.scss';
-import { Tabs, TabIndicator, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Borisenko from './Borisenko/Borisenko.jsx';
 import Mironova from './Mironova/Mironova.jsx';
 import Shishkova from './Shishkova/Shishkova.jsx';
+
+const staffNames = ["Борисенко Н.А.", "Миронова К.В.", "Шишкова С.В."];
 
 function Staff() {
   return (
     <div>
       <Header />
       <main>
-      <Tabs
-      size={'lg'}
-      position="relative"
-      variant="unstyled"
-      >
-            <TabList>
-              <Tab className="staff-name-tab" padding={0}>Борисенко Н.А.</Tab>
-              <Tab className="staff-name-tab" padding={0}>Миронова К.В.</Tab>
-              <Tab className="staff-name-tab" padding={0}>Шишкова С.В.</Tab>
-            </TabList>
-            <TabIndicator
-              mt="-1.5px"
-              height="1.5px"
-              bg="#43129B"
-              borderRadius="1px"
-            />
-            <TabPanels>
-              <TabPanel padding={0}>
-                <Borisenko />
+        <Tabs position="relative" variant="unstyled">
+          <TabList gap={{ base: 4, lg: 8 }}>
+            {staffNames.map((name, index) => (
+              <Tab
+                key={index}
+                className="staff-name-tab"
+                style={{ padding: '0' }}
+                fontSize={{ base: '0.75rem', sm: '0.85rem', md: '0.9rem', lg: '1rem', xl: '1.125rem' }}
+              >
+                {name}
+              </Tab>
+            ))}
+          </TabList>
+          <TabIndicator mt="-1.5px" height="1.5px" bg="#43129B" borderRadius="1px" />
+          <TabPanels>
+            {[Borisenko, Mironova, Shishkova].map((Component, index) => (
+              <TabPanel key={index} padding={0}>
+                <Component />
               </TabPanel>
-              <TabPanel padding={0}>
-                <Mironova />
-              </TabPanel>
-              <TabPanel padding={0}>
-                <Shishkova />
-              </TabPanel>
-            </TabPanels>
-          </Tabs>
+            ))}
+          </TabPanels>
+        </Tabs>
       </main>
       <Footer />
     </div>

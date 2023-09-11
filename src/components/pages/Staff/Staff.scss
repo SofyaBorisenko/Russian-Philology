@@ -14,12 +14,12 @@ $light-gray: #F0F6F1;
   color: $violet;
 }
 
-nav a, .staff-member, .staff-article p, .pub-type-tab {
+nav a, .staff-member, .staff-article p {
   color: $dark-blue;
 }
 
 /* Fonts */
-.staff-article h2, .staff-name-tab, nav a, .pub-type-tab {
+.staff-article h2, .staff-name-tab, nav a {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -45,9 +45,159 @@ ul, ol {
   list-style-position: inside;
 }
 
-.pub-type-tab {
-  background-color: $light-gray;
-  max-width: fit-content;
+/* Styles for screens under 480px */
+@media (min-width: 0px) {
+
+  main {
+    width: 90vw;
+    margin: 0 5vw;
+  }
+
+  .staff-name-tab {
+    line-height: 2rem;
+  }
+
+  .staff-nav a {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    max-width: fit-content;
+  }
+
+  .staff-article h2 {
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 0.4rem 0;
+  }
+
+  .staff-article p, li {
+    font-size: 0.75rem;
+    line-height: 1.05rem;
+    padding-bottom: 0.4rem;
+    word-spacing: 0.1rem;
+  }
+
+  ol {
+    padding-top: 0.4rem;
+  }
+}
+
+/* Styles for 480px-768px screens */
+@media (min-width: 480px) {
+
+  main {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+
+  .staff-name-tab {
+    line-height: 2rem;
+  }
+
+  .staff-nav a {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    max-width: fit-content;
+  }
+
+  .staff-article h2 {
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 0.5rem 0;
+  }
+
+  .staff-article p, li {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding-bottom: 0.5rem;
+    word-spacing: 0.2rem;
+  }
+
+  ol {
+    padding-top: 0.5rem;
+  }
+}
+
+/* Styles for 768px-992px screens */
+@media (min-width: 768px) {
+
+  main {
+    width: 80vw;
+    margin: 6.548rem 10vw 0 10vw;
+  }
+
+  .staff-name-tab {
+    line-height: 2rem;
+  }
+
+  .staff-nav {
+    margin: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .staff-nav a {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .staff-article h2 {
+    font-size: 0.9rem;
+    line-height: 1.15rem;
+    padding: 0.5rem 0;
+  }
+
+  .staff-article p, li {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    padding-bottom: 0.5rem;
+    word-spacing: 0.3rem;
+  }
+
+  ol {
+    padding-top: 0.5rem;
+  }
+}
+
+/* Styles for 992px-1280px screens */
+@media (min-width: 992px) {
+
+  main {
+    width: 64vw;
+    margin: 8.875rem 18vw 0 18vw;
+  }
+
+  .staff-name-tab {
+    line-height: 3rem;
+  }
+
+  .staff-nav {
+    margin: auto;
+    padding-bottom: 0.625rem;
+  }
+
+  .staff-nav a {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .staff-article h2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .staff-article p, li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+    word-spacing: 0.4rem;
+  }
+
+  ol {
+    padding-top: 0.5rem;
+  }
 }
 
 /* Styles for 1280px+ screens */
@@ -60,7 +210,6 @@ ul, ol {
 
     .staff-name-tab {
       line-height: 3rem;
-      margin-right: 3rem;
     }
 
     .staff-nav {
@@ -70,12 +219,13 @@ ul, ol {
     }
 
     .staff-nav a {
-      font-size: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.1rem;
     }
 
     .staff-article h2 {
       font-size: 1.2rem;
-      line-height: 3rem;
+      line-height: 1.8rem;
     }
 
     .staff-article p, li {
@@ -85,18 +235,7 @@ ul, ol {
       word-spacing: 0.4rem;
     }
 
-    .pub-type-tab {
-      font-size: 1rem;
-      line-height: 1;
-      align-content: flex-start;
-      flex-wrap: wrap;
-    }
-
     ol {
       padding-top: 0.625rem;
-    }
-
-    li {
-      padding-bottom: 0.625rem;
     }
 }

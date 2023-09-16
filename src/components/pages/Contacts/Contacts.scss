@@ -1,0 +1,56 @@
+$pink: #FE205A;
+$violet: #43129B;
+$dark-blue: #121d47;
+$light-gray: #F0F6F1;
+
+.contacts {
+    padding-top: 10vh;
+    min-height: 70vh;
+    color: $violet;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* Styles for screens under 480px */
+@media (min-width: 0px) {
+  main {
+    width: 90vw;
+    margin: 0 5vw;
+  }
+}
+
+/* Styles for 480px-768px screens */
+@media (min-width: 480px) {
+  main {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+}
+
+/* Styles for 768px-992px screens */
+@media (min-width: 768px) {
+  main {
+    width: 80vw;
+    margin: 6.548rem 10vw 0 10vw;
+  }
+}
+
+/* Styles for 992px-1280px screens */
+@media (min-width: 992px) {
+  main {
+    width: 64vw;
+    margin: 6.835rem 18vw 0 18vw;
+  }
+}
+
+/* Styles for 1280px+ screens */
+@media (min-width: 1280px) {
+    main {
+      width: 64vw;
+      margin: 8.875rem 18vw 0 18vw;
+    }
+}

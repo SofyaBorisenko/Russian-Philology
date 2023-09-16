@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from '../../layout/Header.jsx';
 import Footer from '../../layout/Footer.jsx';
-import './News.css';
+import './News.scss';
 
 function News() {
   return (
     <div>
       <Header />
-        <div className='main'>
-            <p>Раздел в разработке</p>
-        </div>
+        <main className='news'>
+            <p className='news'>Раздел в разработке</p>
+        </main>
       <Footer />
     </div>
   );

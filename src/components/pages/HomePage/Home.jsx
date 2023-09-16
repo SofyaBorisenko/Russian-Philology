@@ -15,8 +15,8 @@ const theme = extendTheme({ breakpoints })
 function Home() {
     return (
       <main>
+      <h1>О нас</h1>
         <article className='home-article'>
-          <h1>О нас</h1>
           <p>Мы, сотрудники группы психологических основ разработки школьных
           учебников ПИ РАО, занимаемся двумя основными проблемами: 1) разработки учебников по русскому языку и учебных книг по литературе,
           построенных на психолого-дидактическом фундаменте; 2) чтения и понимания текста с листа и с экрана. Сайт «Русская филология» создан в
@@ -26,30 +26,30 @@ function Home() {
           филологическим дисциплинам.</p>
         </article>
         <Wrap
-        spacing={{md: 16, lg: 28, xl: 40, '2xl': 40}}
-        padding={{md: 5, lg: 5, xl: 10, '2xl': 10}}
+        spacing={{ base: 10, sm: 14, md: 20, lg: 28, xl: 40, '2xl': 40 }}
+        padding={{ base: 0, sm: 2, md: 5, lg: 5, xl: 10, '2xl': 10 }}
         style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <WrapItem flexDirection={'column'} alignItems={'center'}>
-                <Avatar size={{md: 'xl', lg: 'xl', xl: '2xl', '2xl': '2xl'}}
+                <Avatar size={{ base: 'md', sm: 'lg', md: 'xl', lg: 'xl', xl: '2xl', '2xl': '2xl' }}
                 name='Борисенко Н.А.'
                 src='' style={{marginBottom: 10}}/>{' '}
                 <h2>Борисенко Н.А.</h2>
             </WrapItem>
             <WrapItem flexDirection={'column'} alignItems={'center'}>
-                <Avatar size={{md: 'xl', lg: 'xl', xl: '2xl', '2xl': '2xl'}}
+                <Avatar size={{ base: 'md', sm: 'lg', md: 'xl', lg: 'xl', xl: '2xl', '2xl': '2xl' }}
                 name='Миронова К.В.'
                 src='' style={{marginBottom: 10}}/>{' '}
                 <h2>Миронова К.В.</h2>
             </WrapItem>
             <WrapItem flexDirection={'column'} alignItems={'center'}>
-                <Avatar size={{md: 'xl', lg: 'xl', xl: '2xl', '2xl': '2xl'}}
+                <Avatar size={{ base: 'md', sm: 'lg', md: 'xl', lg: 'xl', xl: '2xl', '2xl': '2xl' }}
                 name='Шишкова С.В.'
                 src='' style={{marginBottom: 10}}/>{' '}
                 <h2>Шишкова С.В.</h2>
             </WrapItem>
         </Wrap>
-        <article className='home-article'>
         <h1>История группы</h1>
+        <article className='home-article'>
           <p>В 1962 г. в составе лаборатории проблем программированного обучения
           была создана группа «Психологические проблемы построения школьных
           учебников» под руков. Г.Г. Граник. С 1975 г. группа существовала как

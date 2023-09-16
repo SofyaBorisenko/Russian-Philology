@@ -10,7 +10,6 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
       background-color: #F0F6F1;
       padding: 0.75rem 0;
     }
@@ -19,7 +18,7 @@
       display: flex;
     }
 
-    .menu a {
+    .menu-list a {
       color: #121D47;
       font-family: PT Sans;
       font-size: 0.75rem;
@@ -29,7 +28,7 @@
       text-transform: uppercase;
     }
 
-    .menu a:hover {
+    .menu-list a:hover {
       background-color: #C4EAA5;
     }
 

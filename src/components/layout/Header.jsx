@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import './Header.css';
+import './Header.scss';
 import logo1 from './assets/logo1.png';
 import logo2 from './assets/logo2.png';
 import { extendTheme, Divider, Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
@@ -19,6 +19,7 @@ const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
     const headerRef = useRef(null);
+    const mobileMenuRef = useRef(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const handleMobileMenuToggle = () => {
@@ -37,12 +38,28 @@ const Header = () => {
       return () => window.removeEventListener("scroll", handleScroll);
     }, [prevScrollPos, visible, handleScroll]);
 
+    useEffect(() => {
+      const handleOutsideClick = (event) => {
+        if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target)) {
+          setIsMobileMenuOpen(false); // Close the mobile menu
+        }
+      };
+
+      // Attach the click event listener
+      document.body.addEventListener("click", handleOutsideClick);
+
+      // Cleanup: Remove the event listener when the component unmounts
+      return () => {
+        document.body.removeEventListener("click", handleOutsideClick);
+      };
+    }, [isMobileMenuOpen]); // Listen for changes in isMobileMenuOpen
+
     return (
         <header className={`header ${visible ? '' : 'hidden'}`} ref={headerRef}>
         {/* Mobile Version */}
         <div className="mobile-header">
-          <div class="header-container">
-            <div class="mobile-menu">
+          <div className="header-container">
+            <div className="mobile-menu" ref={mobileMenuRef}>
               <Menu>
                 <MenuButton
                   as={IconButton}
@@ -52,29 +69,43 @@ const Header = () => {
                   onClick={handleMobileMenuToggle}
                 />
                 {isMobileMenuOpen && (
-                  <MenuList className="menu">
-                    <MenuItem as='a' href='#'>Главная</MenuItem>
-                    <MenuItem as='a' href='#'>Исследования</MenuItem>
-                    <MenuItem as='a' href='#'>Сотрудники</MenuItem>
-                    <MenuItem as='a' href='#'>Наши учителя</MenuItem>
-                    <MenuItem as='a' href='#'>Новости</MenuItem>
-                    <MenuItem as='a' href='#'>Фотогалерея</MenuItem>
-                    <MenuItem as='a' href='#'>Контакты</MenuItem>
+                  <MenuList className="menu-list" minWidth={32}>
+                    <MenuItem>
+                      <Link to="/">Главная</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="/research">Исследования</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="/staff">Сотрудники</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="/teachers">Наши учителя</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="/news">Новости</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="/photos">Фотогалерея</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to="/contacts">Контакты</Link>
+                    </MenuItem>
                   </MenuList>
               )}
             </Menu>
             </div>
-            <h1 class="header-title">Русская филология</h1>
+            <h1 className="header-title">Русская филология</h1>
             <img
-            class="logo2"
+            className="logo2"
             src={logo2}
             alt="Знак пси"
             height='auto'
             />
           </div>
-          <div class="header-text-container">
-            <h2 class="header-subtitle">Лаборатория экопсихологии развития и психодидактики</h2>
-            <h3 class="header-caption">Группа психологических основ разработки школьных учебников</h3>
+          <div className="header-text-container">
+            <h2 className="header-subtitle">Лаборатория экопсихологии развития и психодидактики</h2>
+            <h3 className="header-caption">Группа психологических основ разработки школьных учебников</h3>
           </div>
         </div>
         <Divider

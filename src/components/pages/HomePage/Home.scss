@@ -1,58 +1,79 @@
+$pink: #FE205A;
+$violet: #43129B;
+$dark-blue: #121d47;
+$light-gray: #F0F6F1;
+
+/* Common styles for elements */
+main h1 {
+  color: $pink;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: $dark-blue;
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+article p {
+  text-align: justify;
+}
+
+h2 {
+  color: $violet;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
 /* Styles for screens under 480px */
 @media (min-width: 0px) {
   main {
-    width: 80%;
-    margin: 0 10% 0 10%;
+    width: 90vw;
+    margin: 0 5vw;
   }
 
   main h1 {
-    color: #FE205A;
-    font-family: PT Sans;
-    font-size: 0.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1rem;
-    text-transform: uppercase;
-    text-align: left;
+    font-size: 0.875rem;
+    line-height: 2rem;
   }
 
-  article {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      color: #121d47;
-      font-family: PT Serif;
-      font-size: 0.8rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1rem;
+  .home-article {
+    font-size: 0.75rem;
+    line-height: 1.05rem;
+    word-spacing: 0.1rem;
   }
 
-  article p {
-    text-align: left;
+  .home-article p {
+    padding-bottom: 0.4rem;
   }
 
   h2 {
-      color: #43129B;
-      text-align: center;
-      font-family: PT Serif;
-      font-size: 0.8rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1rem;
+    font-size: 0.75rem;
+    line-height: 1;
   }
 }
 
 /* Styles for 480px-768px screens */
 @media (min-width: 480px) {
   main {
-    width: 80%;
-    margin: 0 10% 0 10%;
+    width: 80vw;
+    margin: 0 10vw;
   }
 
   main h1 {
     color: #FE205A;
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-size: 0.8rem;
     font-style: normal;
     font-weight: 700;
@@ -66,21 +87,17 @@
       flex-direction: column;
       flex-wrap: wrap;
       color: #121d47;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 0.8rem;
       font-style: normal;
       font-weight: 400;
       line-height: 1rem;
   }
 
-  article p {
-    text-align: left;
-  }
-
   h2 {
       color: #43129B;
       text-align: center;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 0.8rem;
       font-style: normal;
       font-weight: 400;
@@ -96,7 +113,7 @@
   }
   main h1 {
     color: #FE205A;
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 700;
@@ -110,7 +127,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       color: #121d47;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 0.9rem;
       font-style: normal;
       font-weight: 400;
@@ -127,7 +144,7 @@
   h2 {
       color: #43129B;
       text-align: center;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 0.9rem;
       font-style: normal;
       font-weight: 400;
@@ -139,12 +156,12 @@
 @media (min-width: 992px) {
   main {
     width: 64vw;
-    margin: 6.8rem 18vw 0 18vw;
+    margin: 6.835rem 18vw 0 18vw;
   }
 
   main h1 {
     color: #FE205A;
-    font-family: PT Sans;
+    font-family: "PT Sans", sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
@@ -160,21 +177,17 @@
       flex-wrap: wrap;
       width: 64vw;
       color: #121d47;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 1rem;
       font-style: normal;
       font-weight: 400;
       line-height: 1.5rem;
   }
 
-  article p {
-    text-align: justify;
-  }
-
   h2 {
       color: #43129B;
       text-align: center;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 1.1rem;
       font-style: normal;
       font-weight: 400;
@@ -192,7 +205,7 @@
 
     .home-article h1 {
       color: #FE205A;
-      font-family: PT Sans;
+      font-family: "PT Sans", sans-serif;
       font-size: 1.125rem;
       font-style: normal;
       font-weight: 700;
@@ -207,7 +220,7 @@
       flex-wrap: wrap;
       width: 64vw;
       color: #121d47;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 1.2rem;
       font-style: normal;
       font-weight: 400;
@@ -228,7 +241,7 @@
   h2 {
       color: #43129B;
       text-align: center;
-      font-family: PT Serif;
+      font-family: "PT Serif", serif;
       font-size: 1.1rem;
       font-style: normal;
       font-weight: 400;

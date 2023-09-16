@@ -24,14 +24,15 @@ function Bondarenko() {
             <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
-                variant='outline'
+                variant='unstyled'
+                paddingBottom={4}
             >
                 <CardBody>
-                    <Stack divider={<StackDivider />} spacing='4'>
+                    <Stack>
                     <Heading
                     className='card-heading'
-                    size={{ base: 'sm', md: 'sm', lg: 'md', '2xl': 'lg' }}
-                    >
+                    fontSize={{ base: '0.75rem', sm: '0.85rem', md: '0.9rem', lg: '1rem', xl: '1.125rem' }}
+                    lineHeight={{ base: '2rem', md: '3rem' }}>
                         С.М. Бондаренко
                     </Heading>
                     <Box>

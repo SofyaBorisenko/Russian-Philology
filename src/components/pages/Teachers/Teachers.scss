@@ -17,6 +17,11 @@ $dark-blue: #121d47;
     text-align: left;
 }
 
+.card-heading {
+    color: $pink;
+    text-transform: uppercase;
+}
+
 li {
     text-align: left;
 }
@@ -43,10 +48,6 @@ ol {
         line-height: 0.9rem;
     }
 
-    .card-heading {
-        color: $pink;
-    }
-
     .card-text {
         font-size: 0.7rem;
         line-height: 1rem;
@@ -70,10 +71,6 @@ ol {
     .accordion-text {
         font-size: 0.7rem;
         line-height: 1rem;
-    }
-
-    .card-heading {
-        color: $pink;
     }
 
     .card-text {
@@ -102,10 +99,6 @@ ol {
         word-spacing: 0.25rem;
     }
 
-    .card-heading {
-        color: $pink;
-    }
-
     .card-text {
         font-size: 0.9rem;
         line-height: 1.3rem;
@@ -117,7 +110,7 @@ ol {
 @media (min-width: 992px) {
     main {
         width: 64vw;
-        margin: 6.8rem 18vw 0 18vw;
+        margin: 6.835rem 18vw 0 18vw;
       }
 
     .accordion-button {
@@ -131,10 +124,6 @@ ol {
         font-size: 0.95rem;
         line-height: 1.3rem;
         word-spacing: 0.15rem;
-    }
-
-    .card-heading {
-        color: $pink;
     }
 
     .card-text {
@@ -162,10 +151,6 @@ ol {
         font-size: 1.1rem;
         line-height: 1.45;
         word-spacing: 0.4rem;
-    }
-
-    .card-heading {
-        color: $pink;
     }
 
     .card-text {

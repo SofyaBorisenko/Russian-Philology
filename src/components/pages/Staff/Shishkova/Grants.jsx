@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import '../Staff.scss';
 
 const Grants = forwardRef((props, ref) => {

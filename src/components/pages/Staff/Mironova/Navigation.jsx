@@ -1,4 +1,3 @@
-import React from 'react';
 import '../Staff.scss';
 import { Stack, Button } from '@chakra-ui/react';
 

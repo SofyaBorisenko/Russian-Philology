@@ -26,7 +26,7 @@ nav a, .staff-member, .staff-article p {
   text-align: left;
 }
 
-.staff-member, .staff-article p {
+.staff-member, .staff-article p, .staff-article li {
   font-family: "PT Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -37,22 +37,12 @@ nav a, .staff-member, .staff-article p {
   text-transform: uppercase;
 }
 
-.staff-article p, li {
+.staff-article p, .staff-article li {
   text-align: justify;
-}
-
-ul, ol {
-  list-style-position: inside;
 }
 
 /* Styles for screens under 480px */
 @media (min-width: 0px) {
-
-  main {
-    width: 90vw;
-    margin: 0 5vw;
-  }
-
   .staff-name-tab {
     line-height: 2rem;
   }
@@ -78,19 +68,13 @@ ul, ol {
     word-spacing: 0.1rem;
   }
 
-  ol {
+  .staff-article ol {
     padding-top: 0.4rem;
   }
 }
 
 /* Styles for 480px-768px screens */
 @media (min-width: 480px) {
-
-  main {
-    width: 80vw;
-    margin: 0 10vw;
-  }
-
   .staff-name-tab {
     line-height: 2rem;
   }
@@ -116,19 +100,13 @@ ul, ol {
     word-spacing: 0.2rem;
   }
 
-  ol {
+  .staff-article ol {
     padding-top: 0.5rem;
   }
 }
 
 /* Styles for 768px-992px screens */
 @media (min-width: 768px) {
-
-  main {
-    width: 80vw;
-    margin: 6.548rem 10vw 0 10vw;
-  }
-
   .staff-name-tab {
     line-height: 2rem;
   }
@@ -156,19 +134,13 @@ ul, ol {
     word-spacing: 0.3rem;
   }
 
-  ol {
+  .staff-article ol {
     padding-top: 0.5rem;
   }
 }
 
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {
-
-  main {
-    width: 64vw;
-    margin: 6.835rem 18vw 0 18vw;
-  }
-
   .staff-name-tab {
     line-height: 3rem;
   }
@@ -195,19 +167,13 @@ ul, ol {
     word-spacing: 0.4rem;
   }
 
-  ol {
+  .staff-article ol {
     padding-top: 0.5rem;
   }
 }
 
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
-
-    main {
-      width: 64vw;
-      margin: 8.875rem 18vw 0 18vw;
-    }
-
     .staff-name-tab {
       line-height: 3rem;
     }
@@ -228,14 +194,14 @@ ul, ol {
       line-height: 1.8rem;
     }
 
-    .staff-article p, li {
+    .staff-article p, .staff-article li {
       font-size: 1.2rem;
       line-height: 1.8rem;
       padding-bottom: 0.625rem;
       word-spacing: 0.4rem;
     }
 
-    ol {
+    .staff-article ol {
       padding-top: 0.625rem;
     }
 }

@@ -1,7 +1,7 @@
-import React from 'react';
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import './MyImageGallery.css';
+import '../../../App.css';
 
 const images = [
     {
@@ -20,9 +20,9 @@ const images = [
 
   function MyImageGallery() {
     return (
-      <div className="my-custom-gallery">
+      <main className="my-custom-gallery">
         <ImageGallery items={images} />
-      </div>
+      </main>
     );
   }
 

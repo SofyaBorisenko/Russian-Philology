@@ -1,4 +1,3 @@
-import React from "react";
 import './Footer.scss';
 import { Divider } from "@chakra-ui/react";
 import logo3 from './assets/logo3.png';
@@ -20,7 +19,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© Русская Филология, 2023. Все права защищены.<br />
+            <p>© Русская филология, 2023. Все права защищены.<br />
               При использовании любых материалов сайта, включая графику и тексты, <br />
               активная ссылка на сайт обязательна.</p>
           </div>

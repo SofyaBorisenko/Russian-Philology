@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import '../Research.scss';
+import '../../../../App.css';
 import {
     Accordion,
     AccordionIcon,
@@ -36,7 +37,7 @@ function PrimarySchool() {
             <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
-                variant='outline'
+                variant='unstyled'
             >
                 <CardBody>
                     <Stack divider={<StackDivider />} spacing='4'>
@@ -133,7 +134,7 @@ function PrimarySchool() {
                                             align={'top'}
                                             float={'left'}
                                             marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
-                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
+                                            maxW={{ base: '90px', sm: '110px', md: '130px', lg: '160px', xl: '180px' }}
                                             objectFit='contain'
                                             src={grade1}
                                             alt='Учебник 1-го класса'
@@ -163,11 +164,11 @@ function PrimarySchool() {
                                         <AccordionIcon />
                                     </AccordionButton>
                                     <AccordionPanel pb={4}>
-                                    <Image
+                                        <Image
                                             align={'top'}
                                             float={'left'}
                                             marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
-                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
+                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '220px' }}
                                             objectFit='contain'
                                             src={grade2}
                                             alt='Учебник 2-го класса'
@@ -201,7 +202,7 @@ function PrimarySchool() {
                                             align={'top'}
                                             float={'left'}
                                             marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
-                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
+                                            maxW={{ base: '150px', sm: '170px', md: '200px', lg: '230px', xl: '260px' }}
                                             objectFit='contain'
                                             src={grade3}
                                             alt='Учебник 3-го класса'
@@ -235,8 +236,7 @@ function PrimarySchool() {
                                             align={'top'}
                                             float={'left'}
                                             marginRight={{ base: 3, sm: 4, md: '5', xl: '6' }}
-                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '210px' }}
-                                            objectFit='contain'
+                                            maxW={{ base: '110px', sm: '140px', md: '170px', lg: '190px', xl: '220px' }}                                            objectFit='contain'
                                             src={grade4}
                                             alt='Учебник 4-го класса'
                                         />

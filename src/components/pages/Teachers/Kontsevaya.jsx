@@ -1,5 +1,5 @@
-import React from 'react';
 import './Teachers.scss';
+import '../../../App.css';
 import {
     Accordion,
     AccordionIcon,
@@ -12,26 +12,26 @@ import {
     Heading,
     Image,
     Stack,
-    StackDivider,
     Text
     } from '@chakra-ui/react';
     import Kontsevaya_photo from '../assets/Kontsevaya_photo.jpg';
 
 function Kontsevaya() {
     return (
-        <main style={{marginTop: '0.5rem'}}>
+        <main style={{marginTop: '1rem'}}>
             <Card
                 direction={{ base: 'column', sm: 'row' }}
                 overflow='hidden'
                 variant='unstyled'
+                marginTop={1}
                 paddingBottom={4}
             >
                 <CardBody >
                     <Stack>
                     <Heading
                     className='card-heading'
-                    fontSize={{ base: '0.75rem', sm: '0.85rem', md: '0.9rem', lg: '1rem', xl: '1.125rem' }}
-                    lineHeight={{ base: '2rem', md: '3rem' }}>
+                    fontSize={{ base: '0.75rem', sm: '0.85rem', md: '0.9rem', lg: '1rem', xl: '1.2rem' }}
+                    lineHeight={{ base: '1.6rem', sm: '1.8rem', md: '2rem', xl: '3rem' }}>
                         Л.А. Концевая
                     </Heading>
                     <Box>

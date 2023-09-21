@@ -2,55 +2,131 @@ $pink: #FE205A;
 $violet: #43129B;
 $dark-blue: #121d47;
 $light-gray: #F0F6F1;
+$font-sans: "PT Sans", sans-serif;
+$font-serif: "PT Serif", serif;
 
-.contacts {
-    padding-top: 10vh;
-    min-height: 70vh;
-    color: $violet;
-    text-align: center;
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: 700;
+.contact h2 {
+  color: $violet;
+  font-family: $font-sans;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
 }
 
+.contact p {
+  color: $dark-blue;
+  font-family: $font-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.staff-contacts-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Styles for screens under 480px */
 @media (min-width: 0px) {
-  main {
-    width: 90vw;
-    margin: 0 5vw;
+  .staff-contacts-container {
+    flex-direction: column;
+    padding-bottom: 0.25rem;
+  }
+
+  .contact {
+    padding-bottom: 0.25rem;
+  }
+
+  .contact h1 {
+    font-size: 0.75rem;
+    line-height: 1.6rem;
+  }
+
+  .contact h2, .contact p {
+    font-size: 0.75rem;
+    line-height: 1.05rem;
   }
 }
 
 /* Styles for 480px-768px screens */
 @media (min-width: 480px) {
-  main {
-    width: 80vw;
-    margin: 0 10vw;
+  .contact h1 {
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+  }
+
+  .contact h2, .contact p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
   }
 }
 
 /* Styles for 768px-992px screens */
 @media (min-width: 768px) {
-  main {
-    width: 80vw;
-    margin: 6.548rem 10vw 0 10vw;
+  .staff-contacts-container {
+    flex-direction: row;
+    padding-bottom: 0.25rem;
+  }
+
+  .contact {
+    padding-bottom: 0.5rem;
+  }
+
+  .contact h1 {
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+
+  .contact h2 {
+    padding-bottom: 0.25rem;
+  }
+
+  .contact h2, .contact p {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
   }
 }
 
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {
-  main {
-    width: 64vw;
-    margin: 6.835rem 18vw 0 18vw;
+  .contact {
+    padding-bottom: 0.75rem;
+  }
+
+  .contact h1 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .contact h2 {
+    padding-bottom: 0.3rem;
+  }
+
+  .contact h2, .contact p {
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 }
 
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
-    main {
-      width: 64vw;
-      margin: 8.875rem 18vw 0 18vw;
-    }
+  .contact {
+    padding-bottom: 1rem;
+  }
+
+  .contact h1 {
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+
+  .contact h2 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .contact p {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
 }

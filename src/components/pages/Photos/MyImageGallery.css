@@ -1,8 +1,6 @@
 /* Styles for screens under 480px */
 @media (min-width: 0px) {
     .my-custom-gallery {
-        width: 80vw;
-        margin: 0 10vw 0 10vw;
         padding-top: 1rem;
     }
 }
@@ -10,8 +8,6 @@
 /* Styles for 480px-992px screens */
 @media (min-width: 480px) {
     .my-custom-gallery {
-        width: 80vw;
-        margin: 0 10vw 0 10vw;
         padding-top: 2rem;
     }
 }
@@ -19,17 +15,13 @@
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {
     .my-custom-gallery {
-        width: 64vw;
-        margin: 0 18vw 0 18vw;
-        padding-top: 8rem;
+        padding-top: 2rem;
     }
 }
 
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
     .my-custom-gallery {
-        width: 64vw;
-        margin: 0 18vw 0 18vw;
-        padding-top: 10rem;
+        padding-top: 2rem;
     }
 }

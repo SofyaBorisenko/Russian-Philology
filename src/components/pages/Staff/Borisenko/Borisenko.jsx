@@ -1,5 +1,5 @@
-import React from 'react';
 import '../Staff.scss';
+import '../../../../App.css';
 import Bio from './Bio.jsx';
 import Interests from './Interests.jsx';
 import Publications from './Publications.jsx';

@@ -2,6 +2,9 @@ $pink: #FE205A;
 $violet: #43129B;
 $dark-blue: #121d47;
 $light-gray: #F0F6F1;
+$font-size-small: 0.9rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.2rem;
 
 /* Common styles for elements */
 
@@ -43,12 +46,9 @@ nav a, .staff-member, .staff-article p {
 
 /* Styles for screens under 480px */
 @media (min-width: 0px) {
-  .staff-name-tab {
-    line-height: 2rem;
-  }
 
   .staff-nav a {
-    font-size: 0.75rem;
+    font-size: $font-size-small;
     line-height: 1rem;
     align-content: flex-start;
     flex-wrap: wrap;
@@ -56,14 +56,14 @@ nav a, .staff-member, .staff-article p {
   }
 
   .staff-article h2 {
-    font-size: 0.75rem;
+    font-size: $font-size-small;
     line-height: 1;
     padding: 0.4rem 0;
   }
 
-  .staff-article p, li {
-    font-size: 0.75rem;
-    line-height: 1.05rem;
+  .staff-article p, .staff-article li {
+    font-size: $font-size-small;
+    line-height: 1.3rem;
     padding-bottom: 0.4rem;
     word-spacing: 0.1rem;
   }
@@ -75,12 +75,9 @@ nav a, .staff-member, .staff-article p {
 
 /* Styles for 480px-768px screens */
 @media (min-width: 480px) {
-  .staff-name-tab {
-    line-height: 2rem;
-  }
 
   .staff-nav a {
-    font-size: 0.8rem;
+    font-size: $font-size-small;
     line-height: 1rem;
     align-content: flex-start;
     flex-wrap: wrap;
@@ -88,14 +85,14 @@ nav a, .staff-member, .staff-article p {
   }
 
   .staff-article h2 {
-    font-size: 0.85rem;
+    font-size: $font-size-small;
     line-height: 1;
     padding: 0.5rem 0;
   }
 
-  .staff-article p, li {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+  .staff-article p, .staff-article li {
+    font-size: $font-size-small;
+    line-height: 1.4rem;
     padding-bottom: 0.5rem;
     word-spacing: 0.2rem;
   }
@@ -107,9 +104,6 @@ nav a, .staff-member, .staff-article p {
 
 /* Styles for 768px-992px screens */
 @media (min-width: 768px) {
-  .staff-name-tab {
-    line-height: 2rem;
-  }
 
   .staff-nav {
     margin: auto;
@@ -117,18 +111,18 @@ nav a, .staff-member, .staff-article p {
   }
 
   .staff-nav a {
-    font-size: 0.9rem;
+    font-size: $font-size-medium;
     line-height: 1rem;
   }
 
   .staff-article h2 {
-    font-size: 0.9rem;
-    line-height: 1.15rem;
+    font-size: $font-size-medium;
+    line-height: 1.5rem;
     padding: 0.5rem 0;
   }
 
-  .staff-article p, li {
-    font-size: 0.9rem;
+  .staff-article p, .staff-article li {
+    font-size: $font-size-medium;
     line-height: 1.3rem;
     padding-bottom: 0.5rem;
     word-spacing: 0.3rem;
@@ -141,9 +135,6 @@ nav a, .staff-member, .staff-article p {
 
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {
-  .staff-name-tab {
-    line-height: 3rem;
-  }
 
   .staff-nav {
     margin: auto;
@@ -151,17 +142,17 @@ nav a, .staff-member, .staff-article p {
   }
 
   .staff-nav a {
-    font-size: 1rem;
+    font-size: $font-size-medium;
     line-height: 1rem;
   }
 
   .staff-article h2 {
-    font-size: 1rem;
+    font-size: $font-size-medium;
     line-height: 1.25rem;
   }
 
-  .staff-article p, li {
-    font-size: 1rem;
+  .staff-article p, .staff-article li {
+    font-size: $font-size-medium;
     line-height: 1.5rem;
     padding-bottom: 0.5rem;
     word-spacing: 0.4rem;
@@ -174,9 +165,6 @@ nav a, .staff-member, .staff-article p {
 
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
-    .staff-name-tab {
-      line-height: 3rem;
-    }
 
     .staff-nav {
       width: 100%;
@@ -190,12 +178,12 @@ nav a, .staff-member, .staff-article p {
     }
 
     .staff-article h2 {
-      font-size: 1.2rem;
+      font-size: $font-size-large;
       line-height: 1.8rem;
     }
 
     .staff-article p, .staff-article li {
-      font-size: 1.2rem;
+      font-size: $font-size-large;
       line-height: 1.8rem;
       padding-bottom: 0.625rem;
       word-spacing: 0.4rem;

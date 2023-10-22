@@ -21,6 +21,7 @@ function App() {
           {/* Other routes */}
           <Route path="research" element={<Research />} />
           <Route path="staff" element={<Staff />} />
+          <Route path="staff/:tabId" element={<Staff />} />
           <Route path="teachers" element={<Teachers />} />
           <Route path="news" element={<News />} />
           <Route path="photos" element={<Photos />} />
@@ -28,7 +29,7 @@ function App() {
         </Routes>
       </Router>
     </ChakraProvider>
-  )
+  );
 }
 
 export default App;

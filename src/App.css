@@ -1,6 +1,24 @@
 /* Common styles for elements */
-ol, ul {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ol,
+ul {
   list-style-position: inside;
+}
+
+main h1 {
+  color: #fe205a;
+  text-transform: uppercase;
+  text-align: left;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 /* Styles for screens under 480px (Base) */
@@ -8,6 +26,11 @@ ol, ul {
   main {
     width: 90vw;
     margin: 0 5vw;
+  }
+
+  main h1 {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
   }
 }
 
@@ -17,13 +40,23 @@ ol, ul {
     width: 80vw;
     margin: 0 10vw;
   }
+
+  main h1 {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
 }
 
 /* Styles for 768px-992px screens (Medium) */
 @media (min-width: 768px) and (max-width: 991px) {
   main {
     width: 80vw;
-    margin: 6.3475rem 10vw 0 10vw;
+    margin: 6.85rem 10vw 0 10vw;
+  }
+
+  main h1 {
+    font-size: 1rem;
+    line-height: 2rem;
   }
 }
 
@@ -31,7 +64,12 @@ ol, ul {
 @media (min-width: 992px) and (max-width: 1279px) {
   main {
     width: 64vw;
-    margin: 6.835rem 18vw 0 18vw;
+    margin: 7.85rem 18vw 0 18vw;
+  }
+
+  main h1 {
+    font-size: 1rem;
+    line-height: 2rem;
   }
 }
 
@@ -39,6 +77,11 @@ ol, ul {
 @media (min-width: 1280px) {
   main {
     width: 64vw;
-    margin: 8.875rem 18vw 0 18vw;
+    margin: 9.9rem 18vw 0 18vw;
+  }
+
+  main h1 {
+    font-size: 1.2rem;
+    line-height: 3rem;
   }
 }

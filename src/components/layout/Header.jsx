@@ -2,19 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import './Header.scss';
 import logo1 from './assets/logo1.png';
 import logo2 from './assets/logo2.png';
-import { extendTheme, Divider, Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
+import { Center, Divider, Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 
-const breakpoints = {
-  sm: '30em', // 480px
-  md: '48em', // 768px
-  lg: '62em', // 992px
-  xl: '80em', // 1280px
-  '2xl': '96em', // 1536px
-}
-
-const theme = extendTheme({ breakpoints })
 const Header = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
@@ -58,7 +49,7 @@ const Header = () => {
         <header className={`header ${visible ? '' : 'hidden'}`} ref={headerRef}>
         {/* Mobile Version */}
         <div className="mobile-header">
-          <div className="header-container">
+          <div className="header-container-1">
             <div className="mobile-menu" ref={mobileMenuRef}>
               <Menu>
                 <MenuButton
@@ -83,7 +74,7 @@ const Header = () => {
                       <Link to="/teachers">Наши учителя</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/news">Новости</Link>
+                      <Link to="/experiment-2024" color="#FE205A">Эксперимент-2024</Link>
                     </MenuItem>
                     <MenuItem>
                       <Link to="/photos">Фотогалерея</Link>
@@ -95,7 +86,9 @@ const Header = () => {
               )}
             </Menu>
             </div>
-            <h1 className="header-title">Русская филология</h1>
+            <a href="/">
+              <h1 className="header-title">Русская филология</h1>
+            </a>
             <img
             className="logo2"
             src={logo2}
@@ -103,13 +96,23 @@ const Header = () => {
             height='auto'
             />
           </div>
-          <div className="header-text-container">
-            <h2 className="header-subtitle">Лаборатория экопсихологии развития и психодидактики</h2>
-            <h3 className="header-caption">Группа психологических основ разработки школьных учебников</h3>
+          <div className="header-container-2">
+            <h2>Федеральный научный центр психологических<br />и междисциплинарных исследований</h2>
+            <div className="lab-info">
+              <h3 id="lab">Лаборатория<br />экопсихологии развития<br />и психодидактики</h3>
+              <Center height={{base: '1.8rem', sm: '2.1rem', md: '1.3rem', lg: '1.45rem', xl: '1.9rem'}}>
+                <Divider
+                  orientation='vertical'
+                  margin={'0 0.75rem'}
+                  width='1.5px'
+                  background='#43129B'
+                  />
+              </Center>
+              <h3 id="group">Группа психологических<br />основ разработки<br />школьных учебников</h3>
+            </div>
           </div>
         </div>
         <Divider
-              className="divider"
               orientation='horizontal'
               display={{base: 'block', sm: 'block', md: 'none', lg: 'none', xl: 'none', '2xl': 'none'}}
               width='100%'
@@ -119,16 +122,28 @@ const Header = () => {
         {/* Full-Screen Version */}
         <div className="full-screen-header">
             <div className="left-content">
-                <h1>Русская филология</h1>
+                <a href="/">
+                  <h1 className="header-title">Русская филология</h1>
+                </a>
                 <img className="logo1"
                 src={logo1}
                 alt="Логотип ПИ РАО"
                 />
             </div>
             <div className="right-content">
-                <h2>Лаборатория экопсихологии развития и психодидактики</h2>
-                <h3>Группа психологических основ разработки
-                <br />школьных учебников</h3>
+                <h2>ФГБНУ «Федеральный научный центр психологических<br />и междисциплинарных исследований» (ФНЦ ПМИ)</h2>
+                <div className="lab-info">
+                  <h3>Лаборатория экопсихологии<br />развития и психодидактики</h3>
+                  <Center height={{md: '1.3rem', lg: '1.45rem', xl: '1.9rem'}}>
+                    <Divider
+                      orientation='vertical'
+                      margin={'0.5rem 1rem 0 1rem'}
+                      width='1.5px'
+                      background='#43129B'
+                      />
+                  </Center>
+                  <h3>Группа психологических основ<br />разработки школьных учебников</h3>
+                </div>
             </div>
         </div>
         <Divider
@@ -138,7 +153,7 @@ const Header = () => {
           width={{md: '80vw', lg: '64vw', xl: '64vw', '2xl': '64vw'}}
           height='1.5px'
           background='#FE205A'
-          margin={{md: '0.1rem 10vw', lg: '0.3rem 18vw', xl: '0.625rem 18vw', '2xl': '0.625rem 18vw'}}
+          margin={{md: '0.3rem 10vw', lg: '0.3rem 18vw', xl: '0.625rem 18vw', '2xl': '0.625rem 18vw'}}
         />
         <nav className="full-screen-menu">
           <ul className="menu">
@@ -146,7 +161,7 @@ const Header = () => {
             <li><Link to="/research">Исследования</Link></li>
             <li><Link to="/staff">Сотрудники</Link></li>
             <li><Link to="/teachers">Наши учителя</Link></li>
-            <li><Link to="/news">Новости</Link></li>
+            <li className="experiment-link"><Link to="/experiment-2024">Эксперимент-2024</Link></li>
             <li><Link to="/photos">Фотогалерея</Link></li>
             <li><Link to="/contacts">Контакты</Link></li>
           </ul>

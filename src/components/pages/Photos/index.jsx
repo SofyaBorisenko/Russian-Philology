@@ -1,12 +1,12 @@
 import Header from '../../layout/Header.jsx';
 import Footer from '../../layout/Footer.jsx';
-import MyImageGallery from './MyImageGallery.jsx';
+import ImageGallery from './ImageGallery.jsx';
 
 function Photos() {
   return (
     <div>
       <Header />
-      <MyImageGallery />
+      <ImageGallery />
       <Footer />
     </div>
   );

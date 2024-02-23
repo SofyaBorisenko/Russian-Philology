@@ -4,14 +4,24 @@ import './Experiment.scss';
 import '../../../App.css';
 import Ethiopia from '../assets/Ethiopia.webp';
 import Cameroon from '../assets/Cameroon.webp';
+import { Link } from '@chakra-ui/react';
 
 function Text6() {
   return (
     <div>
       <Header />
-      <main className='text6'>
+      <main className='experiment'>
         <br />
         <article className='exp-article'>
+          <Link
+            textDecoration='underline'
+            color='#43129B'
+            className='link-back'
+            href='/experiment-2024 '
+          >
+            НАЗАД
+          </Link>
+          <br />
           <p>
             <i>Устар.</i> Чернокожий, тёмнокожий человек; негр.
           </p>

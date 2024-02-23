@@ -74,7 +74,7 @@ const Header = () => {
                       <Link to="/teachers">Наши учителя</Link>
                     </MenuItem>
                     <MenuItem>
-                      <Link to="/experiment-2024" color="#FE205A">Эксперимент-2024</Link>
+                      <Link to="/experiment-2024">Эксперимент-2024</Link>
                     </MenuItem>
                     <MenuItem>
                       <Link to="/photos">Фотогалерея</Link>

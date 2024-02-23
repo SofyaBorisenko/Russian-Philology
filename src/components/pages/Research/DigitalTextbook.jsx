@@ -1,19 +1,19 @@
-import './Research.scss';
-import '../../../App.css';
-import { Heading, Link, Text } from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import "./Research.scss";
+import "../../../App.css";
+import { Heading, Link, Text } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 function DigitalTextbook() {
   return (
-    <div id='research'>
-      <Text className='research-card-text'>
+    <div id="research">
+      <Text className="research-card-text">
         В 2019-2023 гг. Н.А. Борисенко занималась разработкой психодидактической
         концепции современного цифрового учебного комплекса по русскому языку
         для 5-9 классов (проект РФФИ № 19-29-14067 мк, рук. В.И. Панов). Такой
         комплекс состоит из двух частей: учебника на печатной основе и
         электронного учебника нового поколения, называемого цифровым учебником.
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Под <b>цифровым учебником</b> (далее ЦУ) понимается электронное
         интерактивное издание нового поколения, содержащее системное и полное
         изложение учебного предмета в соответствии с учебной программой,
@@ -26,10 +26,10 @@ function DigitalTextbook() {
         интерактивность, мультимодальность, гипертекстуальность, персональность
         и др. [1, 2, 4].
       </Text>
-      <Heading className='research-card-heading'>
+      <Heading className="research-card-heading">
         Алгоритм разработки ЦУ
       </Heading>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Предпосылкой создания концепции ЦУ стал алгоритм его проектирования,
         разработанный на основе модели психодидактического проектирования и
         экспертизы образовательных систем (В.И. Панов). Данный алгоритм включает
@@ -43,13 +43,13 @@ function DigitalTextbook() {
         (классно-урочной или самостоятельной – «где?»). В концепции подробно
         прописываются все указанные шаги алгоритма (см. подр.: [2]).
       </Text>
-      <Heading className='research-card-heading'>
+      <Heading className="research-card-heading">
         Психологические проблемы создания ЦУ
       </Heading>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Особое внимание уделено собственно психологическим проблемам, связанным
         с созданием ЦУ, среди них:
-        <ul className='research-list'>
+        <ul className="research-list">
           <li>специфика чтения с экрана монокодового текста;</li>
           <li>
             проблемы восприятия с экрана поликодового текста, представляющего
@@ -69,10 +69,10 @@ function DigitalTextbook() {
           </li>
         </ul>
       </Text>
-      <Heading className='research-card-heading'>
+      <Heading className="research-card-heading">
         ЦУ как «достроенный» учебник
       </Heading>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         В методологическом плане ЦУ рассматривается как «достроенный» и
         «расширенный» бумажный учебник. Впервые к созданию школьного учебника
         применены основные положения теории «Человека Достроенного» И.М.
@@ -84,10 +84,10 @@ function DigitalTextbook() {
         данной проблемы большое внимание уделяется особенностям чтения текста с
         экрана, использованию эффективных стратегий цифрового чтения [1, 4, 7].
       </Text>
-      <Heading className='research-card-heading'>
+      <Heading className="research-card-heading">
         Цифровой учебник нового типа
       </Heading>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Принципиальной особенностью концепции является то, что объектом
         исследования является не просто школьный учебник, а учебник нового типа.
         Понятие «учебник нового типа» введено в научный оборот акад. РАО Г.Г.
@@ -103,49 +103,49 @@ function DigitalTextbook() {
         типа, создающийся на основе бумажного, – это второй этап «достройки»,
         «достройки вдвойне».
       </Text>
-      <Heading className='research-card-heading'>Литература</Heading>
-      <Text className='research-card-text'>
+      <Heading className="research-card-heading">Литература</Heading>
+      <Text className="research-card-text">
         Основные положения концепции ЦУ отражены в следующих публикациях:
-        <ol className='research-list'>
+        <ol className="research-list">
           <li>
             Граник Г.Г., Борисенко Н.А. Психолого-дидактические проблемы
             создания цифровых учебников // Психологическая наука и образование.
-            2021. Т. 26. № 3. C. 102-112.{' '}
+            2021. Т. 26. № 3. C. 102-112.{" "}
             <Link
-              color='#43129B'
-              href='https://psyjournals.ru/journals/pse/archive/2021_n3/pse_2021_n3_Granik_Borisenko.pdf'
+              color="#43129B"
+              href="https://psyjournals.ru/journals/pse/archive/2021_n3/pse_2021_n3_Granik_Borisenko.pdf"
               isExternal
             >
               DOI:10 17759/pse 2021260307
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>
             Борисенко Н.А., Граник Г.Г. Цифровой учебник для поколения Z:
             проблемы и перспективы создания // Экопсихологические
             исследования–6: сб. науч. ст. М.; Курск, 2020. С. 430-434. eLIBRARY
-            ID:{' '}
+            ID:{" "}
             <Link
-              color='#43129B'
-              href='https://elibrary.ru/item.asp?id=42501130'
+              color="#43129B"
+              href="https://elibrary.ru/item.asp?id=42501130"
               isExternal
             >
               42501130
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>
             Борисенко Н.А. Цифровая образовательная платформа как ресурс
             формирования новых учебных читательских практик // Доклады Научного
             совета по проблемам чтения РАО. Вып. 18 / сост. Ю.П. Мелентьева. М.:
-            ФГБУН «Наука» РАН, 2021. С. 9-18. eLIBRARY ID:{' '}
+            ФГБУН «Наука» РАН, 2021. С. 9-18. eLIBRARY ID:{" "}
             <Link
-              color='#43129B'
-              href='https://elibrary.ru/item.asp?id=47989779'
+              color="#43129B"
+              href="https://elibrary.ru/item.asp?id=47989779"
               isExternal
             >
               47989779
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>
@@ -153,14 +153,14 @@ function DigitalTextbook() {
             создания цифрового учебного комплекса по русскому языку // Учебник
             как инструмент национально-культурного самоопределения обучающихся:
             сб. трудов конф. М.: Языки народов мира, 2021. С. 30-34. eLIBRARY
-            ID:{' '}
+            ID:{" "}
             <Link
-              color='#43129B'
-              href='https://elibrary.ru/item.asp?id=45709506'
+              color="#43129B"
+              href="https://elibrary.ru/item.asp?id=45709506"
               isExternal
             >
               45709506
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>
@@ -168,40 +168,40 @@ function DigitalTextbook() {
             учебника: от бумажного к электронному формату // Психология
             саморегуляции в контексте актуальных задач образования. Материалы
             научной конференции. М.: Психологический институт РАО, 2021. С.
-            56-63. eLIBRARY ID:{' '}
+            56-63. eLIBRARY ID:{" "}
             <Link
-              color='#43129B'
-              href='https://elibrary.ru/item.asp?id=46320935'
+              color="#43129B"
+              href="https://elibrary.ru/item.asp?id=46320935"
               isExternal
             >
               46320935
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>
             Борисенко Н.А. Специфика коммуникативной функции бумажного и
             цифрового учебников // М.: Психологический институт РАО, 2022. С.
-            661-664. DOI:{' '}
+            661-664. DOI:{" "}
             <Link
-              color='#43129B'
-              href='https://doi.org/10.24412/cl-36917-2022-661-664'
+              color="#43129B"
+              href="https://doi.org/10.24412/cl-36917-2022-661-664"
               isExternal
             >
               10.24412/cl-36917-2022-661-664
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>
             Борисенко Н.А. Трансформация функций школьного учебника в условиях
             цифровизации образования // Педагогика. 2022. № 7. С. 31-44.
-            eLIBRARY ID:{' '}
+            eLIBRARY ID:{" "}
             <Link
-              color='#43129B'
-              href='https://elibrary.ru/item.asp?id=49317408'
+              color="#43129B"
+              href="https://elibrary.ru/item.asp?id=49317408"
               isExternal
             >
               49317408
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
         </ol>

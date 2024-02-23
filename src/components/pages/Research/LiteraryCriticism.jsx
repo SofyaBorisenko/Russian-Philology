@@ -1,14 +1,14 @@
-import './Research.scss';
-import '../../../App.css';
-import { Heading, Link, Text } from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import "./Research.scss";
+import "../../../App.css";
+import { Heading, Link, Text } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 function LiteraryCriticism() {
   return (
-    <div id='research'>
-      <Text className='research-card-text'>
+    <div id="research">
+      <Text className="research-card-text">
         В конце 1990-х гг. Г.Г. Граник с соавт. стали разрабатывать новое
-        научное направление –{' '}
+        научное направление –{" "}
         <i>«Школьное литературоведение на психологической основе»</i>. В отличие
         от Б.М. Теплова, предложившего поставить художественную литературу на
         службу научным исследованиям по психологии, идея Г.Г. Граник состояла в
@@ -17,7 +17,7 @@ function LiteraryCriticism() {
         способствовать эмоциональному, личностному и когнитивному развитию
         учащихся в процессе чтения и осмысления художественных текстов.
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         В рамках данного направления авторским коллективом под рук. Г.Г. Граник
         были написаны, апробированы и изданы семь учебных книг по литературе для
         учащихся средних и старших классов: «И… снова о Пушкине» (1999),
@@ -28,7 +28,7 @@ function LiteraryCriticism() {
         размышляем» (2016), «А.С. Пушкин, его друзья и современники» (2019;
         2023) [2; 3; 4; 5; 6; 7; 8].
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Ведущим принципом отбора и построения материала в учебных книгах нового
         типа является возбуждение и поддержание познавательного интереса
         подростков к писателю, его творчеству и мировоззрению. Так, авторы
@@ -44,7 +44,7 @@ function LiteraryCriticism() {
         выполнении этих задач учащимся необходимо постоянно возвращаться к
         прочитанному, выражать свое мнение, обосновывая его с опорой на текст.
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Отдельной исследовательской проблемой стала разработка и апробация
         системы психодидактических принципов и приемов развития у подростков
         понимания лирической поэзии [9]. Данная система была реализована К.В.
@@ -62,7 +62,7 @@ function LiteraryCriticism() {
         различных чувств, размышлений, трудно уловимых переходов душевных
         состояний.
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         В учебных книгах нового типа используется особая форма общения со
         школьниками – «устная речь в ее письменной форме». Специфика этого языка
         заключается в соединении интонационного богатства и выразительности
@@ -78,17 +78,17 @@ function LiteraryCriticism() {
         искусства, разбираться в нем, постигая выраженное в тексте авторское
         мировосприятие и высказывая собственное обоснованное суждение.
       </Text>
-      <Text className='research-card-text'>
-        Все книги, создаваемые в рамках{' '}
+      <Text className="research-card-text">
+        Все книги, создаваемые в рамках{" "}
         <i>«школьного литературоведения на психологической основе»</i>,
         способствуют решению важнейшей задачи гуманитарного образования –
         воспитание настоящего читателя, для которого чтение является
         потребностью, формой духовной жизни и средством созидания самого себя
         как личности.
       </Text>
-      <Heading className='research-card-heading'>Основные публикации</Heading>
-      <Text className='research-card-text'>
-        <ol className='research-list'>
+      <Heading className="research-card-heading">Основные публикации</Heading>
+      <Text className="research-card-text">
+        <ol className="research-list">
           <li>
             Граник Г.Г. Проблема создания школьного литературоведения на
             психологическом фундаменте // Мир психологии. 2016. № 1 (85). С.
@@ -130,12 +130,12 @@ function LiteraryCriticism() {
             способности к пониманию лирической поэзии // Перспективы науки и
             образования. 2021. № 6 (54). С. 330-341. DOI:
             <Link
-              color='#43129B'
-              href='https://cyberleninka.ru/article/n/psihodidakticheskie-osnovy-stanovleniya-u-podrostkov-sposobnosti-k-ponimaniyu-liricheskoy-poezii/viewer'
+              color="#43129B"
+              href="https://cyberleninka.ru/article/n/psihodidakticheskie-osnovy-stanovleniya-u-podrostkov-sposobnosti-k-ponimaniyu-liricheskoy-poezii/viewer"
               isExternal
             >
               10.32744/pse.2021.6.22
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>

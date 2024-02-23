@@ -1,6 +1,7 @@
 import Header from '../../layout/Header.jsx';
 import Footer from '../../layout/Footer.jsx';
 import Petr1 from '../assets/Petr1.webp';
+import { Link } from '@chakra-ui/react';
 import './Experiment.scss';
 import '../../../App.css';
 
@@ -8,9 +9,18 @@ function Text4() {
   return (
     <div>
       <Header />
-      <main>
+      <main className='experiment'>
         <br />
         <article className='exp-article'>
+          <Link
+            textDecoration='underline'
+            color='#43129B'
+            className='link-back'
+            href='/experiment-2024 '
+          >
+            НАЗАД
+          </Link>
+          <br />
           <p>
             Абрам Петрович Ганнибал (до крещения Ибрагим) (1696–1781) –
             воспитанник и сподвижник Петра I, прадед Пушкина со стороны матери.

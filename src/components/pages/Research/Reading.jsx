@@ -1,12 +1,12 @@
-import './Research.scss';
-import '../../../App.css';
-import { Heading, Link, Text } from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import "./Research.scss";
+import "../../../App.css";
+import { Heading, Link, Text } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 function Reading() {
   return (
-    <div id='research'>
-      <Text className='research-card-text'>
+    <div id="research">
+      <Text className="research-card-text">
         К числу приоритетных исследований, проводимых научным коллективом в
         настоящее время, относятся: проблема трансформации чтения школьников в
         новых социокультурных условиях, феномен цифрового чтения, эмпирические
@@ -14,8 +14,8 @@ function Reading() {
         смыслового чтения с бумажных и электронных носителей. Результаты
         исследований отражены в ряде публикаций (см.).
       </Text>
-      <Heading className='research-card-heading'>Бэкграунд</Heading>
-      <Text className='research-card-text'>
+      <Heading className="research-card-heading">Бэкграунд</Heading>
+      <Text className="research-card-text">
         Данное направление является продолжением идей Г.Г. Граник с сотр. в
         области понимания текста (первые исследования проведены в 1980-е гг.
         (см., напр.: Граник Г.Г., Бондаренко С.М., Концевая Л.А. Как учить
@@ -34,10 +34,10 @@ function Reading() {
         ряд теоретико-эмпирических исследований чтения с экрана (на выборке
         средних подростков).
       </Text>
-      <Heading className='research-card-heading'>
+      <Heading className="research-card-heading">
         Социолого-психологическое исследование чтения подростков (2020)
       </Heading>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         В феврале-марте 2020 г. нами было проведено массовое онлайн-исследование
         «Бумага vs экран (чтение с листа и с экрана)», в котором приняли участие
         1835 школьников V-VIII классов (45,3% мальчиков и 54,7% девочек) из 14
@@ -53,23 +53,23 @@ function Reading() {
         используемого в подростковой среде девайса – смартфон/мобильный телефон
         (73,5%).
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         В ходе онлайн-опроса выявлена связь цифрового чтения с типом текста. При
         чтении информационных текстов предпочтительнее экран (40,8%
         респондентов), при чтении художественных – бумага (52,4%), остальные
         информанты предпочтений не высказали.
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Один из важных выводов исследования: в настоящее время мы переживаем
         переходный период в чтении, проявляющийся в сосуществовании чтения с
         листа и чтения с экрана при доминировании традиционного формата (см.
         подр.: [7]).
       </Text>
-      <Heading className='research-card-heading'>
+      <Heading className="research-card-heading">
         Сравнительный анализ уровня понимания текста с листа и с экрана
         (2021-2022)
       </Heading>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Самостоятельной исследовательской задачей стало выявление особенностей
         понимания текста с экрана (в сравнении с чтением с листа). Проведенный
         теоретический анализ по проблемам цифрового чтения [1; 3] показал, что в
@@ -78,7 +78,7 @@ function Reading() {
         однако эмпирических исследований на русскоязычной выборке испытуемых,
         явно недостаточно.
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         В 2021-2022 гг. сотрудниками группы было проведено сравнительное
         исследование уровня понимания школьниками 11–16 лет бумажных и
         электронных текстов в процессе смыслового чтения. Выборку составили 712
@@ -88,13 +88,13 @@ function Reading() {
         повествовательного текста (фрагментов из книги Ф. Конюхова «На грани
         возможностей» о плавании вокруг Антарктиды).
       </Text>
-      <Text className='research-card-text'>
+      <Text className="research-card-text">
         Основные выводы:
-        <ol className='research-list'>
+        <ol className="research-list">
           <li>
             Обнаружено и статистически подтверждено отсутствие значимых различий
             в уровне понимания текста подростками при чтении с экрана и с листа
-            (p {'>'} 0,05). Возможно, это связано с психологическими
+            (p {">"} 0,05). Возможно, это связано с психологическими
             особенностями цифровых поколений Z (зет) и A (альфа) – адаптацией
             подростков к цифровому чтению в результате самонаучения.
           </li>
@@ -136,9 +136,9 @@ function Reading() {
           </li>
         </ol>
       </Text>
-      <Heading className='research-card-heading'>Публикации</Heading>
-      <Text className='research-card-text'>
-        <ol className='research-list'>
+      <Heading className="research-card-heading">Публикации</Heading>
+      <Text className="research-card-text">
+        <ol className="research-list">
           <li>
             Миронова К.В., Борисенко Н.А., Шишкова С.В. Возрастная динамика
             понимания текста подростками 11–16 лет в процессе смыслового чтения
@@ -150,12 +150,12 @@ function Reading() {
             Теоретическая и экспериментальная психология. 2022. Т. 15. № 3. С.
             170-186. DOI:
             <Link
-              color='#43129B'
-              href='https://tepsyj.ru/articles/article/1659/'
+              color="#43129B"
+              href="https://tepsyj.ru/articles/article/1659/"
               isExternal
             >
               10.24412/2073-0861-2022-3-170-186
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
           <li>
@@ -188,12 +188,12 @@ function Reading() {
             теоретико-эмпирического исследования // Science for Education Today.
             2020. Т. 10. № 5. С. 28-49. DOI:
             <Link
-              color='#43129B'
-              href='http://dx.doi.org/10.15293/2658-6762.2005.02'
+              color="#43129B"
+              href="http://dx.doi.org/10.15293/2658-6762.2005.02"
               isExternal
             >
               10.15293/2658-6762.2005.02
-              <ExternalLinkIcon mx='2px' />
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </li>
         </ol>

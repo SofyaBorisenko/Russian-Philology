@@ -1,26 +1,26 @@
-import "./Home.scss";
-import "../../../App.css";
-import { Avatar, Link, Wrap, WrapItem } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import Borisenko_avatar from "../assets/Borisenko_avatar.jpeg";
-import Mironova_avatar from "../assets/Mironova_avatar.jpg";
-import Shishkova_avatar from "../assets/Shishkova_avatar.jpg";
+import './Home.scss';
+import '../../../App.css';
+import { Avatar, Link, Wrap, WrapItem } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
+import Borisenko_avatar from '../assets/Borisenko_avatar.webp';
+import Mironova_avatar from '../assets/Mironova_avatar.webp';
+import Shishkova_avatar from '../assets/Shishkova_avatar.webp';
 
 const avatarsData = [
   {
-    name: "Борисенко Н.А.",
+    name: 'Борисенко Н.А.',
     src: Borisenko_avatar,
-    link: "/staff/borisenko",
+    link: '/staff/borisenko',
   },
   {
-    name: "Миронова К.В.",
+    name: 'Миронова К.В.',
     src: Mironova_avatar,
-    link: "/staff/mironova",
+    link: '/staff/mironova',
   },
   {
-    name: "Шишкова С.В.",
+    name: 'Шишкова С.В.',
     src: Shishkova_avatar,
-    link: "/staff/shishkova",
+    link: '/staff/shishkova',
   },
 ];
 
@@ -28,47 +28,47 @@ function Home() {
   return (
     <main>
       <h1>О нас</h1>
-      <article className="home-article">
+      <article className='home-article'>
         <p>
-          Мы,{" "}
-          <Link color="#43129B" href="/staff">
+          Мы,{' '}
+          <Link color='#43129B' href='/staff'>
             сотрудники
-          </Link>{" "}
+          </Link>{' '}
           группы психологических основ разработки школьных учебников ПИ РАО,
           занимаемся двумя основными проблемами: 1) разработки учебников по
           русскому языку и учебных книг по литературе, построенных на
           психолого-дидактическом фундаменте; 2) чтения и понимания текста с
           листа и с экрана. Сайт «Русская филология» создан в развитие идей
-          научной школы акад. РАО{" "}
-          <Link color="#43129B" href="/teachers/#Granik">
+          научной школы акад. РАО{' '}
+          <Link color='#43129B' href='/teachers/#Granik'>
             Г.Г. Граник
-          </Link>{" "}
+          </Link>{' '}
           и наших собственных исследований. На сайте можно найти как научные
           публикации, так и практические рекомендации по различным вопросам
           обучения школьников филологическим дисциплинам.
         </p>
       </article>
       <Wrap
-        spacing={{ base: 4, sm: 10, md: 20, lg: 24, xl: 40, "2xl": 52 }}
-        padding={{ sm: 2, md: 5, lg: 5, xl: 10, "2xl": 10 }}
+        spacing={{ base: 4, sm: 10, md: 20, lg: 24, xl: 40, '2xl': 52 }}
+        padding={{ sm: 2, md: 5, lg: 5, xl: 10, '2xl': 10 }}
         paddingTop={{ base: 2 }}
         paddingBottom={{ base: 2 }}
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         {avatarsData.map((data, index) => (
-          <WrapItem key={index} flexDirection={"column"} alignItems={"center"}>
+          <WrapItem key={index} flexDirection={'column'} alignItems={'center'}>
             <Avatar
               size={{
-                base: "md",
-                sm: "lg",
-                md: "xl",
-                lg: "xl",
-                xl: "2xl",
-                "2xl": "2xl",
+                base: 'md',
+                sm: 'lg',
+                md: 'xl',
+                lg: 'xl',
+                xl: '2xl',
+                '2xl': '2xl',
               }}
               name={data.name}
               src={data.src}
@@ -81,12 +81,12 @@ function Home() {
         ))}
       </Wrap>
       <h1>История группы</h1>
-      <article className="home-article">
+      <article className='home-article'>
         <p>
           В 1962 г. в составе лаборатории проблем программированного обучения
           была создана группа «Психологические проблемы построения школьных
-          учебников» под руков.{" "}
-          <Link color="#43129B" href="/teachers/#Granik">
+          учебников» под руков.{' '}
+          <Link color='#43129B' href='/teachers/#Granik'>
             Г.Г. Граник
           </Link>
           . С 1975 г. группа существовала как самостоятельная единица (с 2015 г.
@@ -96,10 +96,10 @@ function Home() {
         <p>
           Почти полвека (1962–2021) научный коллектив, возглавляемый академиком
           РАО, доктором психол. наук, профессором Г.Г. Граник, работал над
-          созданием{" "}
-          <Link color="#43129B" href="/research/#papertextbook">
+          созданием{' '}
+          <Link color='#43129B' href='/research/#papertextbook'>
             школьных учебников
-          </Link>{" "}
+          </Link>{' '}
           нового типа по русскому языку и учебных книг по литературе, опираясь
           на психолого-дидактические исследования и собственную оригинальную
           концепцию.
@@ -123,9 +123,9 @@ function Home() {
         </p>
         <ol>
           <li>
-            <Link color="#43129B" href="/research/#papertextbook">
+            <Link color='#43129B' href='/research/#papertextbook'>
               «Школьный учебник»
-            </Link>{" "}
+            </Link>{' '}
             (Г.Г. Граник, С.М. Бондаренко, Л.А. Концевая, Н.А. Борисенко, С.В.
             Шишкова);
           </li>
@@ -143,10 +143,10 @@ function Home() {
           используются как учебные пособия.
         </p>
         <p>
-          Основной целью{" "}
-          <Link color="#43129B" href="/research/#papertextbook">
+          Основной целью{' '}
+          <Link color='#43129B' href='/research/#papertextbook'>
             школьного курса
-          </Link>{" "}
+          </Link>{' '}
           русского языка в концепции Г.Г. Граник является формирование у
           учащихся положительной познавательной мотивации; понимания
           лингвистических закономерностей; воспитание культурного человека,
@@ -167,10 +167,10 @@ function Home() {
           </li>
           <li>
             разработка учебных материалов для цифровой образовательной платформы
-            (на сайте издательства{" "}
-            <Link color="#43129B" href="https://mnemozina.ru/" isExternal>
+            (на сайте издательства{' '}
+            <Link color='#43129B' href='https://mnemozina.ru/' isExternal>
               «Мнемозина»
-              <ExternalLinkIcon mx="2px" />
+              <ExternalLinkIcon mx='2px' />
             </Link>
             ), с использованием уже изданных учебников по русскому языку, что
             позволит индивидуализировать процесс обучения, выстроить систему

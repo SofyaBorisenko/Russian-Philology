@@ -2,34 +2,39 @@ import Header from '../../layout/Header.jsx';
 import Footer from '../../layout/Footer.jsx';
 import './Experiment.scss';
 import '../../../App.css';
-import Ethiopia from "../assets/Ethiopia.jpg";
-import Cameroon from "../assets/Cameroon.jpg";
+import Ethiopia from '../assets/Ethiopia.webp';
+import Cameroon from '../assets/Cameroon.webp';
 
 function Text6() {
   return (
     <div>
       <Header />
-        <main className="text6"><br />
-        <article className="exp-article">
-          <p><i>Устар.</i> Чернокожий, тёмнокожий человек; негр.</p>
+      <main className='text6'>
+        <br />
+        <article className='exp-article'>
+          <p>
+            <i>Устар.</i> Чернокожий, тёмнокожий человек; негр.
+          </p>
         </article>
         <div className='pics'>
           <div className='pic'>
-            <img className='ethiopia'
-                 src={Ethiopia}
-                 alt="Почтовая марка Эфиопии 1964 г."
-                 />
+            <img
+              className='ethiopia'
+              src={Ethiopia}
+              alt='Почтовая марка Эфиопии 1964 г.'
+            />
             <h3>Почтовая марка Эфиопии 1964 г.</h3>
           </div>
           <div className='pic'>
-            <img className="cameroon"
-                 src={Cameroon}
-                 alt="Почтовая марка Камеруна 1962 г."
-                 />
+            <img
+              className='cameroon'
+              src={Cameroon}
+              alt='Почтовая марка Камеруна 1962 г.'
+            />
             <h3>Почтовая марка Камеруна 1962 г.</h3>
           </div>
         </div>
-        </main>
+      </main>
       <Footer />
     </div>
   );

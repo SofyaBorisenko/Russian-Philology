@@ -1,398 +1,413 @@
-$violet: #43129B;
+$violet: #43129b;
 $dark-blue: #121d47;
 $font-size-small: 0.9rem;
 $font-size-medium: 1rem;
-$font-size-large: 1.2rem;
+$font-size-large: 1.4rem;
 
-.text2, .text3, .text5, .text6, .text8 {
-    min-height: 80vh;
-  }
+.text2,
+.text3,
+.text5,
+.text6,
+.text8 {
+  min-height: 80vh;
+}
 
-.exp-article, .exp-poem-article {
-    font-family: "PT Serif", serif;
-    font-style: normal;
-    font-weight: 400;
-    color: $dark-blue;
+.exp-article,
+.exp-poem-article {
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $dark-blue;
 }
 
 .exp-heading {
-    font-family: "PT Serif", serif;
-    font-style: normal;
-    font-weight: 700;
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .maintext-pic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pics {
-    display: flex;
-    margin-bottom: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 .pic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ending {
-    text-align: center;
-    color: $violet;
-    font-weight: 700;
+  text-align: center;
+  color: $violet;
+  font-weight: 700;
 }
 
 /* Styles for screens under 480px */
 @media (min-width: 0px) {
-    .exp-article {
-        font-size: $font-size-small;
-        text-align: justify;
-        line-height: 1.3rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-indent: 2rem;
-    }
+  .exp-article {
+    font-size: $font-size-small;
+    text-align: justify;
+    line-height: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-indent: 2rem;
+  }
 
-    .exp-article p {
-        padding-bottom: 0.3rem;
-    }
+  .exp-article p {
+    padding-bottom: 0.3rem;
+  }
 
-    .exp-poem-article {
-        font-size: $font-size-small;
-        text-align: justify;
-        line-height: 1.4rem;
-        padding-bottom: 0.4rem;
-    }
+  .exp-poem-article {
+    font-size: $font-size-small;
+    text-align: justify;
+    line-height: 1.4rem;
+    padding-bottom: 0.4rem;
+  }
 
-    .exp-poem-article p {
-        text-indent: 2rem;
-    }
+  .exp-poem-article p {
+    text-indent: 2rem;
+  }
 
-    .exp-heading {
-        font-size: $font-size-small;
-        line-height: 1.3rem;
-        padding: 1rem 2rem;
-    }
+  .exp-heading {
+    font-size: $font-size-small;
+    line-height: 1.3rem;
+    padding: 1rem 2rem;
+  }
 
-    .maintext-pic h3, .pic h3 {
-        color: $dark-blue;
-        font-family: "PT Serif", serif;
-        font-size: 0.75rem;
-        font-weight: 400;
-        line-height: 1.3rem;
-        text-align: center;
-        font-style: italic;
-        padding-top: 0.5rem;
-    }
+  .maintext-pic h3,
+  .pic h3 {
+    color: $dark-blue;
+    font-family: 'PT Serif', serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 0.5rem;
+  }
 
-    .pics {
-        flex-direction: column;
-        align-items: center;
-    }
+  .pics {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .maintext-pic {
-        max-width: 12rem;
-        margin-top: 1rem;
-    }
+  .maintext-pic {
+    max-width: 12rem;
+    margin-top: 1rem;
+  }
 
-    .pic {
-        margin-top: 0.5rem;
-    }
+  .pic {
+    margin-top: 0.5rem;
+  }
 
-    .petr1 {
-        max-width: 12rem;
-    }
+  .petr1 {
+    max-width: 12rem;
+  }
 
-    .ethiopia, .cameroon {
-        max-width: 10rem;
-    }
+  .ethiopia,
+  .cameroon {
+    max-width: 10rem;
+  }
 
-    .ending {
-        margin: 1rem 0;
-    }
+  .ending {
+    margin: 1rem 0;
+  }
 }
 
 /* Styles for 480px-768px screens */
 @media (min-width: 480px) {
-    .exp-article {
-        font-size: $font-size-small;
-        text-align: justify;
-        line-height: 1.4rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-indent: 2rem;
-    }
+  .exp-article {
+    font-size: $font-size-small;
+    text-align: justify;
+    line-height: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-indent: 2rem;
+  }
 
-    .exp-article p {
-        padding-bottom: 0.4rem;
-    }
+  .exp-article p {
+    padding-bottom: 0.4rem;
+  }
 
-    .exp-poem-article {
-        font-size: $font-size-small;
-        text-align: justify;
-        line-height: 1.4rem;
-        padding-bottom: 0.4rem;
-    }
+  .exp-poem-article {
+    font-size: $font-size-small;
+    text-align: justify;
+    line-height: 1.4rem;
+    padding-bottom: 0.4rem;
+  }
 
-    .exp-poem-article p {
-        text-indent: 2rem;
-    }
+  .exp-poem-article p {
+    text-indent: 2rem;
+  }
 
-    .exp-heading {
-        font-size: $font-size-small;
-        line-height: 1.4rem;
-        padding: 1rem 2rem;
-    }
+  .exp-heading {
+    font-size: $font-size-small;
+    line-height: 1.4rem;
+    padding: 1rem 2rem;
+  }
 
-    .maintext-pic h3, .pic h3 {
-        color: $dark-blue;
-        font-family: "PT Serif", serif;
-        font-size: 0.8rem;
-        font-weight: 400;
-        line-height: 1.4rem;
-        text-align: center;
-        font-style: italic;
-        padding-top: 0.75rem;
-    }
+  .maintext-pic h3,
+  .pic h3 {
+    color: $dark-blue;
+    font-family: 'PT Serif', serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 0.75rem;
+  }
 
-    .pics {
-        flex-direction: column;
-        align-items: center;
-    }
+  .pics {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .maintext-pic {
-        max-width: 14rem;
-        margin-top: 1.5rem;
-    }
+  .maintext-pic {
+    max-width: 14rem;
+    margin-top: 1.5rem;
+  }
 
-    .pic {
-        margin-top: 1rem;
-    }
+  .pic {
+    margin-top: 1rem;
+  }
 
-    .petr1 {
-        max-width: 14rem;
-    }
+  .petr1 {
+    max-width: 14rem;
+  }
 
-    .ethiopia, .cameroon {
-        max-width: 12rem;
-    }
+  .ethiopia,
+  .cameroon {
+    max-width: 12rem;
+  }
 
-    .ending {
-        margin: 1.2rem 0;
-    }
+  .ending {
+    margin: 1.2rem 0;
+  }
 }
 
 /* Styles for 768px-992px screens */
 @media (min-width: 768px) {
-    .experiment {
-        padding: 0 4rem;
-    }
+  .experiment {
+    padding: 0 4rem;
+  }
 
-    .exp-article {
-        font-size: $font-size-medium;
-        text-align: justify;
-        line-height: 1.5rem;
-        word-spacing: 0.2rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-indent: 2.5rem;
-    }
+  .exp-article {
+    font-size: $font-size-medium;
+    text-align: justify;
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-indent: 2.5rem;
+  }
 
-    .exp-article p {
-        padding-bottom: 0.5rem;
-    }
+  .exp-article p {
+    padding-bottom: 0.5rem;
+  }
 
-    .exp-poem-article {
-        font-size: $font-size-medium;
-        text-align: justify;
-        line-height: 1.5rem;
-        word-spacing: 0.2rem;
-        padding-bottom: 0.5rem;
-    }
+  .exp-poem-article {
+    font-size: $font-size-medium;
+    text-align: justify;
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+    padding-bottom: 0.5rem;
+  }
 
-    .exp-poem-article p {
-        text-indent: 2.5rem;
-    }
+  .exp-poem-article p {
+    text-indent: 2.5rem;
+  }
 
-    .exp-heading {
-        font-size: $font-size-medium;
-        line-height: 1.5rem;
-        padding: 1.5rem 2rem;
-    }
+  .exp-heading {
+    font-size: $font-size-medium;
+    line-height: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
 
-    .maintext-pic h3, .pic h3 {
-        color: $dark-blue;
-        font-family: "PT Serif", serif;
-        font-size: $font-size-small;
-        font-weight: 400;
-        line-height: 1.5rem;
-        text-align: center;
-        font-style: italic;
-        padding-top: 1rem;
-    }
+  .maintext-pic h3,
+  .pic h3 {
+    color: $dark-blue;
+    font-family: 'PT Serif', serif;
+    font-size: $font-size-small;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 1rem;
+  }
 
-    .pics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .pics {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    .maintext-pic {
-        max-width: 14rem;
-    }
+  .maintext-pic {
+    max-width: 14rem;
+  }
 
-    .petr1 {
-        max-width: 16rem;
-    }
+  .petr1 {
+    max-width: 16rem;
+  }
 
-    .ethiopia, .cameroon {
-        max-width: 10rem;
-    }
+  .ethiopia,
+  .cameroon {
+    max-width: 10rem;
+  }
 
-    .ending {
-        margin: 1.5rem 0;
-    }
+  .ending {
+    margin: 1.5rem 0;
+  }
 }
 
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {
-    .experiment {
-        padding: 0 4rem;
-    }
+  .experiment {
+    padding: 0 4rem;
+  }
 
-    .exp-article {
-        font-size: $font-size-medium;
-        text-align: justify;
-        line-height: 1.5rem;
-        word-spacing: 0.3rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-indent: 2.5rem;
-    }
+  .exp-article {
+    font-size: $font-size-medium;
+    text-align: justify;
+    line-height: 1.5rem;
+    word-spacing: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-indent: 2.5rem;
+  }
 
-    .exp-article p {
-        padding-bottom: 0.5rem;
-    }
+  .exp-article p {
+    padding-bottom: 0.5rem;
+  }
 
-    .exp-poem-article {
-        font-size: $font-size-medium;
-        text-align: justify;
-        line-height: 1.5rem;
-        word-spacing: 0.3rem;
-        padding-bottom: 0.5rem;
-    }
+  .exp-poem-article {
+    font-size: $font-size-medium;
+    text-align: justify;
+    line-height: 1.5rem;
+    word-spacing: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
 
-    .exp-poem-article p {
-        text-indent: 2.5rem;
-    }
+  .exp-poem-article p {
+    text-indent: 2.5rem;
+  }
 
-    .exp-heading {
-        font-size: $font-size-medium;
-        line-height: 1.5rem;
-        padding: 1.5rem 2rem;
-    }
+  .exp-heading {
+    font-size: $font-size-medium;
+    line-height: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
 
-    .maintext-pic h3, .pic h3 {
-        color: $dark-blue;
-        font-family: "PT Serif", serif;
-        font-size: $font-size-small;
-        font-weight: 400;
-        line-height: 1.5rem;
-        text-align: center;
-        font-style: italic;
-        padding-top: 1rem;
-    }
+  .maintext-pic h3,
+  .pic h3 {
+    color: $dark-blue;
+    font-family: 'PT Serif', serif;
+    font-size: $font-size-small;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 1rem;
+  }
 
-    .pics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .pics {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    .maintext-pic {
-        max-width: 14rem;
-    }
+  .maintext-pic {
+    max-width: 14rem;
+  }
 
-    .petr1 {
-        max-width: 18rem;
-    }
+  .petr1 {
+    max-width: 18rem;
+  }
 
-    .ethiopia, .cameroon {
-        max-width: 12rem;
-    }
+  .ethiopia,
+  .cameroon {
+    max-width: 12rem;
+  }
 }
 
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
-    .experiment {
-        padding: 0 6rem;
-    }
+  .experiment {
+    padding: 0 6rem;
+  }
 
-    .exp-article {
-        font-size: $font-size-large;
-        text-align: justify;
-        line-height: 1.8rem;
-        word-spacing: 0.4rem;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        text-indent: 3rem;
-    }
+  .exp-article {
+    font-size: $font-size-large;
+    text-align: justify;
+    line-height: 1.8rem;
+    word-spacing: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-indent: 3rem;
+  }
 
-    .exp-article p {
-        padding-bottom: 0.5rem;
-    }
+  .exp-article p {
+    padding-bottom: 0.5rem;
+  }
 
-    .exp-poem-article {
-        font-size: $font-size-large;
-        text-align: justify;
-        line-height: 1.8rem;
-        word-spacing: 0.4rem;
-        padding-bottom: 0.5rem;
-    }
+  .exp-poem-article {
+    font-size: $font-size-large;
+    text-align: justify;
+    line-height: 1.8rem;
+    word-spacing: 0.4rem;
+    padding-bottom: 0.5rem;
+  }
 
-    .exp-poem-article p {
-        text-indent: 3rem;
-    }
-    
-    .exp-heading {
-        font-size: $font-size-large;
-        line-height: 1.8rem;
-        padding: 1rem 2rem;
-    }
+  .exp-poem-article p {
+    text-indent: 3rem;
+  }
 
-    .maintext-pic h3, .pic h3 {
-        color: $dark-blue;
-        font-family: "PT Serif", serif;
-        font-size: $font-size-medium;
-        line-height: 1.8rem;
-        text-align: center;
-        font-style: italic;
-        padding-top: 1rem;
-    }
+  .exp-heading {
+    font-size: $font-size-large;
+    line-height: 1.8rem;
+    padding: 1rem 2rem;
+  }
 
-    .pics {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .maintext-pic h3,
+  .pic h3 {
+    color: $dark-blue;
+    font-family: 'PT Serif', serif;
+    font-size: $font-size-medium;
+    line-height: 1.8rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 1rem;
+  }
 
-    .maintext-pic {
-        max-width: 20rem;
-    }
+  .pics {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    .petr1 {
-        max-width: 22rem;
-    }
+  .maintext-pic {
+    max-width: 20rem;
+  }
 
-    .ethiopia, .cameroon {
-        max-width: 14rem;
-    }
+  .petr1 {
+    max-width: 22rem;
+  }
 
-    .ending {
-        margin: 1.8rem 0;
-    }
+  .ethiopia,
+  .cameroon {
+    max-width: 14rem;
+  }
+
+  .ending {
+    margin: 1.8rem 0;
+  }
 }

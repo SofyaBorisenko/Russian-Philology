@@ -1,4 +1,3 @@
-import './ImageGallery.css';
 import '../../../App.css';
 import photo1 from '../assets/photo1.webp';
 import photo2 from '../assets/photo2.webp';
@@ -108,7 +107,7 @@ const MyImageGallery = () => {
 
   return (
     <main>
-      <VStack>
+      <VStack pt={['1rem', null, '1.5rem', null, '2rem']} h='100vh'>
         <HStack justifyContent='space-between' alignItems='center' gap='0'>
           <Button
             {...buttonStyle}

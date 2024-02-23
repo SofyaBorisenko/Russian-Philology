@@ -1,11 +1,4 @@
-import {
-  Heading,
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-} from '@chakra-ui/react';
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
 import Header from '../../layout/Header.jsx';
 import Footer from '../../layout/Footer.jsx';
 import './Research.scss';

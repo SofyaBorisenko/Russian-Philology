@@ -36,7 +36,6 @@ function Research() {
                 key={index}
                 className='research-dir-tab'
                 bg='#e1e1e1'
-                border='2px solid #C4EAA5'
                 borderTopRadius='0.375rem'
                 borderBottomRadius={{ base: '0.375rem', sm: 'none' }}
                 width={{ base: '100%', sm: 'fit-content' }}

@@ -1,4 +1,8 @@
 /* Common styles for elements */
+* {
+  background-color: #f0f6f1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,7 +20,7 @@ main h1 {
   color: #fe205a;
   text-transform: uppercase;
   text-align: left;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
 }

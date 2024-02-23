@@ -45,7 +45,7 @@ function PrimarySchool() {
             <div
               style={{
                 display: 'flex',
-                alignItems: 'center',
+                alignItems: 'flex-start',
                 justifyContent: 'space-between',
               }}
             >
@@ -59,12 +59,12 @@ function PrimarySchool() {
                 className='scroll-button'
                 fontSize={{
                   base: '0.9rem',
-                  sm: '0.9rem',
                   md: '1rem',
-                  lg: '1rem',
                   xl: '1.1rem',
                 }}
-                _hover={{ bg: '#C4EAA5' }}
+                _hover={{
+                  bg: '#C4EAA5',
+                }}
               >
                 Перейти к учебникам
               </Button>

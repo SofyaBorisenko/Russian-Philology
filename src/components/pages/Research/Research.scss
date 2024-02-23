@@ -1,34 +1,22 @@
 $pink: #fe205a;
 $violet: #43129b;
 $dark-blue: #121d47;
-$light-gray: #f0f6f1;
+$light-green: #c4eaa5;
 $font-size-small: 0.9rem;
 $font-size-medium: 1rem;
 $font-size-large: 1.2rem;
 
 /* Common styles for elements */
-main .research-dir-tab,
+
 div .scroll-button {
-  background-color: $light-gray;
+  background-color: $light-green;
   color: $dark-blue;
 }
 
-.research-accordion-button,
-.under_development {
+.research-accordion-button {
   color: $violet;
 }
 
-.under_development {
-  height: 80vh;
-}
-
-.under_development p {
-  font-weight: 700;
-  text-align: center;
-  padding-top: 100px;
-}
-
-main .research-heading,
 .school-tab {
   color: $pink;
 }
@@ -37,16 +25,19 @@ main .research-heading,
   color: $violet;
 }
 
-main .research-heading,
 main .research-dir-tab,
 .school-tab,
 #research .research-card-heading,
 .research-accordion-button,
 div .scroll-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   text-align: left;
+}
+
+main .research-dir-tab {
+  color: $dark-blue;
 }
 
 .school-tab {
@@ -59,14 +50,10 @@ div .scroll-button {
   vertical-align: middle;
 }
 
-main .research-heading {
-  text-transform: uppercase;
-}
-
 .research-card-text,
 .research-accordion-text {
   color: $dark-blue;
-  font-family: "PT Serif", serif;
+  font-family: 'PT Serif', serif;
   font-style: normal;
   font-weight: 400;
   text-align: justify;
@@ -88,11 +75,6 @@ div .scroll-button {
 
 /* Styles for under 480px screens */
 @media (min-width: 0px) {
-  main .research-heading {
-    font-size: $font-size-small;
-    line-height: 2rem;
-  }
-
   main .research-dir-tab {
     font-size: $font-size-small;
     line-height: 1rem;
@@ -151,11 +133,6 @@ div .scroll-button {
 
 /* Styles for 480px-768px screens */
 @media (min-width: 480px) {
-  main .research-heading {
-    font-size: $font-size-small;
-    line-height: 2rem;
-  }
-
   main .research-dir-tab {
     font-size: $font-size-small;
     line-height: 1rem;
@@ -214,11 +191,6 @@ div .scroll-button {
 
 /* Styles for 768px-992px screens */
 @media (min-width: 768px) {
-  main .research-heading {
-    font-size: $font-size-medium;
-    line-height: 2rem;
-  }
-
   main .research-dir-tab {
     font-size: $font-size-medium;
     line-height: 1rem;
@@ -277,12 +249,6 @@ div .scroll-button {
 
 /* Styles for 992px-1280px screens */
 @media (min-width: 992px) {
-  main .research-heading {
-    font-size: $font-size-medium;
-    line-height: 2rem;
-    padding-bottom: 0.35rem;
-  }
-
   main .research-dir-tab {
     font-size: $font-size-medium;
     line-height: 1;
@@ -339,11 +305,6 @@ div .scroll-button {
 
 /* Styles for 1280px+ screens */
 @media (min-width: 1280px) {
-  main .research-heading {
-    font-size: $font-size-large;
-    line-height: 3rem;
-  }
-
   main .research-dir-tab {
     font-size: 1.1rem;
     line-height: 1.2rem;

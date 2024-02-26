@@ -7,7 +7,10 @@ const Publications = forwardRef((props, ref) => {
     <article ref={ref} className='staff-article'>
       <h2>Публикации</h2>
       <Tabs isFitted position='relative' variant='enclosed' width={'100%'}>
-        <TabList gap={1} style={{ flexWrap: 'wrap' }}>
+        <TabList
+          gap={1}
+          style={{ flexWrap: 'wrap', wordBreak: 'normal', hyphens: 'auto' }}
+        >
           {[
             'Научные статьи в рецензируемых изданиях',
             'Учебные книги и пособия',

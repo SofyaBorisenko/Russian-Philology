@@ -4,7 +4,7 @@ import '../Staff.scss';
 
 const Publications = forwardRef((props, ref) => {
   return (
-    <article ref={ref} className='staff-article'>
+    <article ref={ref} className='staff-article' lang='ru'>
       <h2>Публикации</h2>
       <Tabs isFitted position='relative' variant='enclosed' width={'100%'}>
         <TabList

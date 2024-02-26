@@ -12,12 +12,16 @@ function Research() {
   return (
     <div>
       <Header />
-      <main>
+      <main lang='ru'>
         <Tabs isFitted position='relative' variant={{ sm: 'enclosed' }}>
           <TabList
             gap={1}
             flexDirection={{ base: 'column', sm: 'row' }}
-            justifyContent={'flex-start'}
+            style={{
+              justifyContent: 'flex-start',
+              wordBreak: 'normal',
+              hyphens: 'auto',
+            }}
           >
             {[
               'Школьный учебник на бумажном носителе',

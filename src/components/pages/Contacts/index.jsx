@@ -13,7 +13,7 @@ function Contacts() {
   return (
     <div>
       <Header />
-      <main>
+      <main className='contacts'>
         <h1>Наши контакты</h1>
         <div className='staff-contacts-container'>
           <div className='contact'>

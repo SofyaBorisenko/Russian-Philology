@@ -9,7 +9,6 @@
     "@emotion/styled": "^11.11.0",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@pbe/react-yandex-maps": "^1.2.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,7 +18,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
-    "react-image-gallery": "^1.3.0",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
     "resolve-url-loader": "^5.0.0",
@@ -27,8 +25,7 @@
     "sass-loader": "^14.1.1",
     "source-map-loader": "^5.0.0",
     "update-browserslist-db": "^1.0.13",
-    "web-vitals": "^2.1.4",
-    "ymaps": "^0.2.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -55,6 +52,11 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.20",
+    "@types/react": "^18.2.60",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^4.0.0"
   }
 }

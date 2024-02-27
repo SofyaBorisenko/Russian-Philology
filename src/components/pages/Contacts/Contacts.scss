@@ -1,9 +1,9 @@
-$pink: #FE205A;
-$violet: #43129B;
+$pink: #fe205a;
+$violet: #43129b;
 $dark-blue: #121d47;
-$light-gray: #F0F6F1;
-$font-sans: "PT Sans", sans-serif;
-$font-serif: "PT Serif", serif;
+$light-gray: #f0f6f1;
+$font-sans: 'PT Sans', sans-serif;
+$font-serif: 'PT Serif', serif;
 
 .contact h2 {
   color: $violet;
@@ -42,7 +42,8 @@ $font-serif: "PT Serif", serif;
     line-height: 1.6rem;
   }
 
-  .contact h2, .contact p {
+  .contact h2,
+  .contact p {
     font-size: 0.75rem;
     line-height: 1.05rem;
   }
@@ -55,7 +56,8 @@ $font-serif: "PT Serif", serif;
     line-height: 1.8rem;
   }
 
-  .contact h2, .contact p {
+  .contact h2,
+  .contact p {
     font-size: 0.8rem;
     line-height: 1.1rem;
   }
@@ -64,7 +66,6 @@ $font-serif: "PT Serif", serif;
 /* Styles for 768px-992px screens */
 @media (min-width: 768px) {
   .staff-contacts-container {
-    flex-direction: row;
     padding-bottom: 0.25rem;
   }
 
@@ -81,7 +82,8 @@ $font-serif: "PT Serif", serif;
     padding-bottom: 0.25rem;
   }
 
-  .contact h2, .contact p {
+  .contact h2,
+  .contact p {
     font-size: 0.9rem;
     line-height: 1.1rem;
   }
@@ -102,7 +104,8 @@ $font-serif: "PT Serif", serif;
     padding-bottom: 0.3rem;
   }
 
-  .contact h2, .contact p {
+  .contact h2,
+  .contact p {
     font-size: 1rem;
     line-height: 1.2rem;
   }
